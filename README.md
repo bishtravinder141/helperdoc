@@ -30,13 +30,13 @@ Helper Doc is a modern job portal designed to connect employers, employees (hous
 
 ## Tech Stack
 - **Frontend:** React.js
-- **Authentication:** OAuth 2.0 for Google and Microsoft Login
+- **Authentication:** OAuth 2.0 for Google, facebook and mobile number Login
 - **Real-Time Communication:** WebSockets
 
 ## Installation  
 1. Clone the repo:  
    ```bash  
-   git clone https://github.com/bishtravinder141/talent-co.git
+   https://github.com/bishtravinder141/helperdoc.git
 
 2. Install the dependency:
    ```bash
@@ -44,4 +44,4 @@ Helper Doc is a modern job portal designed to connect employers, employees (hous
 4. Add the .env file.
 5. Run the project:
     ```bash
-    npm run dev
+    npm start
