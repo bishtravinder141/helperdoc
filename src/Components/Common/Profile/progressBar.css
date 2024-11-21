@@ -1,0 +1,10 @@
+.complete-profile-right p {
+  margin-bottom: 0;
+}
+.complete-profile-right p span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.complete-profile-right.text-end {
+  text-align: left !important;
+}

@@ -1,0 +1,26 @@
+.dashboard-footer.copyright p {
+  margin: 0;
+  text-align: left;
+}
+.dashboard-footer.copyright ul {
+  display: flex;
+  justify-content: flex-end;
+}
+/* .dashboard-footer.copyright ul li a {
+  color: var(--Is-white);
+  margin-left: 30px;
+}
+.dashboard-footer.copyright ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.dashboard-footer.copyright ul li a:hover {
+  color: var(--Is-yellow);
+} */
+.dashboard-footer.copyright {
+  position: absolute;
+  left: 230px;
+  width: calc(100% - 230px);
+  padding: 20px 25px;
+  bottom: 0;
+}

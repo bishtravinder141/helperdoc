@@ -1,0 +1,23 @@
+.complete-profile-right {
+    max-width: 500px;
+    width: 100%;
+}
+
+.complete-profile-right .progress {
+    border-radius: 50px;
+    background: #ddd;
+    margin-bottom: 6px;
+}
+
+.progress-bar {
+    background: #0A6259 !important;
+    border-radius: 50px !important;
+}
+
+.complete-profile-right p {
+    font-size: 18px !important;
+}
+
+.complete-profile-right span {
+    font-size: 22px !important;
+}

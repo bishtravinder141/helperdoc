@@ -1,0 +1,46 @@
+/* src/components/Signup/Signup.css */
+.signupContainer {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* RegistrationPage.css */
+.registrationPageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.outerBox {
+  width: 600px;
+}
+
+.registrationPageContent {
+  padding: 20px;
+}
+
+.roleCheckboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.roleCard {
+  width: calc(33.333% - 20px); /* Adjust as needed */
+  flex: 1 1 auto;
+}
+
+.selectedRoleContainer {
+  margin-top: 20px;
+}
+
+.selectedRoleContainer h3 {
+  margin-bottom: 10px;
+}

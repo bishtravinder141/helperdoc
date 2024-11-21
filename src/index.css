@@ -1,0 +1,1244 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap");
+
+/* Keyframes */
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(45px);
+  }
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {width: 4px;height: 4px;}
+/* Track */
+::-webkit-scrollbar-track {background: #f1f1f1;}
+/* Handle */
+::-webkit-scrollbar-thumb {background: #888;}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+
+
+:root {
+  --Is-green: #55dba6;
+  --Is-darkgreen: #0a6259;
+  --Is-hover: #034b44;
+  --Is-bg: #effff9;
+  --Is-gray-bg: #f9f9fa;
+  --Is-gray: #646464;
+  --Is-black: #000000;
+  --Is-white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body,
+p {
+  font-size: 16px !important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+input,
+select,
+textarea,
+button,
+label,
+legend {font-family: "Nunito Sans", sans-serif !important;}
+.pageContainer {width: 100% !important;max-width: 1280px !important;padding: 0 15px !important;margin: 0 auto;}
+h2.title {font-size: 46px;font-weight: bold;margin-bottom: 15px;letter-spacing: 0;line-height: 1.16;}
+.side-filters {max-width: 285px;width: 100%;background: var(--Is-light-bg);padding: 25px 20px;border-radius: 15px;font-size: 13px;}
+section {padding: 75px 0;}
+.OTPInputContainer {justify-content: center;gap: 3px;}
+.passField {width: 100%;max-width: 400px;}
+.OTPInputContainer input.otpInput {padding: 10px;margin: 5px 3px 20px;width: 55px !important;border-radius: 8px;border: 1px solid #e0e0e0;height: 55px;}
+
+
+/***************Header Style***************/
+
+header.MuiPaper-root {background: #fff;box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);z-index: 9;position: sticky;top: 0;padding: 5px 0;}
+.mainHeader {z-index: 9;position: sticky;top: 0;}
+.menubarLink {display: flex;align-items: center;flex-wrap: wrap;}
+img.whatsApp {max-width: 40px;}
+button.MuiButton-colorInherit {padding: 7px 25px;background-color: var(--Is-green);font-size: 16px;border-radius: 5px;}
+.full-width-datepicker {width: 100%;}
+.react-datepicker-wrapper {display: inline-block;padding: 10px 0 10px;border: 0;width: 100%;}
+.menubarLink a {min-width: 10px;padding: 0;margin-right: 30px;font-size: 16px;background: transparent;text-decoration: none;border-radius: 5px;color: var(--Is-black);cursor: pointer;}
+.menubarLink a:hover {color: var(--Is-darkgreen);}
+.menubarLink a.signUpButton {background: url(../public/register-icon.svg) var(--Is-darkgreen);padding: 9px 25px 9px 43px;background-repeat: no-repeat;background-position: 20px 13px;color: var(--Is-white);margin: 0 20px;}
+.menubarLink a.loginButton {background: url(../public/sign-icon.svg) var(--Is-green);padding: 9px 25px 9px 43px;background-repeat: no-repeat;background-position: 20px 13px;color: var(--Is-black);margin: 0;}
+.menubarLink a.loginButton:hover, .menubarLink a.loginButton:hover {background-color: #65e5b2;color: var(--Is-black);}
+button:hover, .menubarLink a.signUpButton:hover {background-color: var(--Is-hover) !important;color: var(--Is-white) !important;}
+.headerInnerBar {width: 100%;padding: 0;}
+
+
+/***************Banner Style***************/
+
+.homeBannerSection {background-color: var(--Is-bg);}
+.homeContainer {padding: 20px;text-align: left;background-size: cover;color: var(--Is-black);}
+.homeBannerSection img {max-width: 100%;display: block;}
+.homeBannerSection .MuiGrid-root {align-items: center;}
+.pageContainer > .MuiGrid-root {margin-top: 0;width: 100%;}
+.banner-img {padding-left: 8%;}
+.homeBannerSection h2 {font-size: 48px;font-weight: bold;line-height: 1.35;margin-bottom: 15px;text-transform: capitalize;}
+.homeBannerSection p {font-size: 24px !important;}
+.searchByLocation {background: #fff;padding: 12px 12px 12px 24px;border: 1px solid #c2efdd;border-radius: 10px;margin: 30px 0 0 !important;}
+.searchByLocation .MuiGrid-root {padding: 0;}
+.searchByLocation .MuiGrid-root fieldset {border: none;top: 0;padding: 0;}
+.searchByLocation .MuiGrid-root input {border: none !important;padding: 8px 8px 8px 30px;height: auto;line-height: normal;}
+.searchByLocation .MuiGrid-root label {-webkit-transform: translate(23px, 5px) scale(1);-moz-transform: translate(23px, 5px) scale(1);-ms-transform: translate(23px, 5px) scale(1);transform: translate(23px, 5px) scale(1);background-color: var(--Is-white);border-radius: 10px;padding: 2px 5px;font-weight: 600;font-family: "Nunito Sans", sans-serif !important;color: var(--Is-black);}
+.searchByLocation .MuiGrid-root label.Mui-focused {-webkit-transform: translate(15px, -10px) scale(1);-moz-transform: translate(15px, -10px) scale(1);-ms-transform: translate(15px, -10px) scale(1);transform: translate(15px, -20px) scale(1);font-size: 80%;}
+.searchByLocation .MuiGrid-root .MuiInputBase-root.MuiOutlinedInput-root {background: url(../public/mark-icon.svg) no-repeat;background-position: left center;}
+.searchInput {width: calc(100% - 110px);}
+.searchButton {width: 110px;}
+.searchButton button {background: var(--Is-darkgreen);color: var(--Is-white);box-shadow: none;text-transform: none;width: 100%;font-size: 16px;padding: 5px;border-radius: 5px;}
+
+
+/***************Recruiters Style***************/
+
+.recruitersSection {color: #90b4b0;background-color: var(--Is-darkgreen);padding: 25px 0;}
+.recruitersContainer h6 {margin: 0 0 20px;}
+.recrutersThumbsCol {align-items: center;justify-content: space-between;gap: 15px;}
+.recrutersThumbs img {max-width: 140px;max-height: 35px;}
+
+
+/***************How It Works Style***************/
+
+section.howItWorksSection {overflow: hidden;}
+.howItWorksContent {text-align: center;}
+.workTabsCol .MuiTabs-flexContainer {align-items: center;justify-content: center;border: 2px solid var(--Is-green);padding: 4px 0;width: max-content;margin: 0 auto;border-radius: 50px;}
+.workTabsCol button.tabs {background: transparent;margin: 0 5px;border-radius: 60px;padding: 0 40px;text-transform: none;font-weight: bold;color: var(--Is-black);min-width: 130px;text-align: center;font-size: 16px;}
+.workTabsCol button.tabs.Mui-selected {color: #fff;background: var(--Is-darkgreen);}
+.MuiTabs-indicator {display: none;}
+.howItWorksContent {padding-top: 25px;}
+.work-count {font-size: 26px;background: var(--Is-green);display: inline-block;width: 60px;height: 60px;line-height: 60px;border-radius: 7px;margin-bottom: 18px;color: #fff;font-weight: bold;}
+.work-col {margin-top: 30px;position: relative;}
+.filterSelect {width: 250px;}
+.work-col:before {position: absolute;top: 30px;left: calc(100% - 43px);width: calc(100% - 70px);height: 10px;content: "__________";letter-spacing: 5px;text-align: center;overflow: hidden;line-height: 0;color: var(--Is-green);}
+.work-col h5 {font-weight: bold;margin-bottom: 5px;}
+.workCounter .MuiGrid-item:last-child .work-col:before {display: none;}
+
+
+/***************Who We Are Style***************/
+
+.whoWeAreSection, .whyChooseUsSection {background-color: var(--Is-gray-bg);}
+.whoWeImg {padding-right: 25px;max-width: 94%;position: relative;padding-bottom: 25px;}
+.whoWeImg:before {content: "";left: 70px;top: 70px;right: 0;bottom: 0;background: var(--Is-green);position: absolute;}
+.whoWeImg img {border-radius: 10px;position: relative;}
+.whoWeContent {padding-left: 4%;}
+.whoWeContent h6 {color: var(--Is-darkgreen);text-transform: uppercase;font-weight: 600 !important;padding-bottom: 10px;}
+ul.whoWeAreList {padding-bottom: 30px;}
+.whoWeAreList li.whoWeAreListItem {padding: 16px 0 5px 36px;font-weight: bold;background: url(../public/tik.png) no-repeat;background-position: left 14px;background-size: 27px;}
+button.arrowButton {background: url(../public/btn-arrow.svg) var(--Is-darkgreen);padding: 9px 55px 9px 25px;background-repeat: no-repeat;background-position: calc(100% - 20px);color: var(--Is-white) !important;text-transform: none;font-size: 16px;border-radius: 10px;}
+.row-reverse {flex-direction: row-reverse !important;}
+.row-reverse .whoWeContent {padding-right: 0;padding-right: 4%;}
+.whyChooseUsSection ul.whoWeAreList li {display: block !important;font-weight: normal;}
+.whyChooseUsSection ul.whoWeAreList li span {display: block;margin-bottom: 9px;}
+
+
+/***************Easily Find Helpers***************/
+
+.findHelperSection h2 {margin: 0;}
+.findHelperTitle {padding-bottom: 20px;padding-top: 0 !important;}
+.helpersCol {border: 1px solid #e7e7e7;padding: 20px;border-radius: 10px;display: flex;gap: 15px;position: relative;height: 100%;}
+.helperImg {min-width: 50px;}
+.helperImg img {width: 50px;height: 50px;border-radius: 50%;object-fit: cover;}
+.wishlistIcon {position: absolute;right: 10px;top: 10px;cursor: pointer;}
+.helperContent h5 {font-weight: bold;margin-bottom: 4px;text-transform: capitalize;font-size: 24px;}
+.newApplicants .helperContent h5 {font-size: 18px;}
+.locationDate {display: flex;gap: 20px;color: var(--Is-gray);font-size: 14px;}
+.availabilityTag {display: inline-block;background: #d2faea;padding: 4px 15px;font-size: 13px;border-radius: 50px;color: #1ba971;margin-top: 15px;}
+.location {padding-left: 20px;background: url(../public/mark-icon.svg) no-repeat;background-position: left top;background-size: 12px;}
+.date {padding-left: 20px;background: url(../public/calendar-icon.svg) no-repeat;background-position: left center;background-size: 14px;}
+
+
+/***************Featured Jobs***************/
+
+.jobsSection .helperContent h5 {font-size: 16px;}
+
+
+/***************Pricing Packages***************/
+
+.plan-col {border: 2px solid var(--Is-green);padding: 30px 10%;border-radius: 15px;height: 100%;}
+.plan-col h2.title {color: #25ac77;text-align: center;margin-bottom: 7px;}
+.plan-col p {text-align: center;font-weight: 500;margin: 0;}
+.pricingPrice {font-size: 56px;font-weight: bold;color: #25ac77;line-height: 1;text-align: center;padding: 35px 0 25px;border-top: 1px solid #e0e0e0;margin-top: 30px;}
+.pricingPrice sup {font-size: 33%;color: var(--Is-black);position: relative;top: -5px;}
+.pricingPrice sub {font-size: 33%;top: -14px;position: relative;font-weight: 500;}
+.pricingPrice sub span {color: #999;}
+ul.plan-features {margin: 0;padding: 0;list-style: none;}
+ul.plan-features li {padding: 11px 0 11px 25px;border-bottom: 1px solid #e0e0e0;background: url(../public/list-icon-green.svg) no-repeat;background-position: left 13px;}
+button.simpleButton {background: var(--Is-green);padding: 9px 25px;color: var(--Is-black);margin: 0;text-transform: none;border-radius: 50px;}
+button.simpleButton:hover {background: var(--Is-darkgreen);color: var(--Is-white);}
+.plan-col button.simpleButton {margin: 30px auto 10px;display: block;}
+.subscriptionPlanSection .workTabsCol {padding: 30px 0;}
+.plan-col.plan-1 {background: var(--Is-green);box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);}
+.plan-col.plan-1 h2.title, .plan-col.plan-1 p, .plan-col.plan-1 li, .plan-col.plan-1 .pricingPrice sub span {color: var(--Is-black);}
+.plan-col.plan-1 .pricingPrice {color: var(--Is-black);border-color: #9effd9;}
+.plan-col.plan-1 ul.plan-features li {border-bottom: 1px solid #9effd9;background: url(../public/list-icon-black.svg) no-repeat;background-position: left 13px;}
+.plan-col.plan-1 button.simpleButton {background: var(--Is-darkgreen);color: var(--Is-white);}
+
+
+/***************Testimonials***************/
+
+.testimonialsSection {background-color: var(--Is-gray-bg);padding-bottom: 100px;}
+.testimonialsSubheading {max-width: 490px;display: inline-block;margin-bottom: 30px !important;}
+.testimonialSlide {border: 1px solid #dcdcdc;border-radius: 12px;padding: 25px;position: relative;}
+.testimonialSlide:before {content: "";background: url(../public/icon-quote.svg) no-repeat;background-position: center;position: absolute;top: -25px;left: 25px;width: 50px;height: 50px;border-radius: 50%;}
+.testimonialSlide p {color: var(--Is-gray);}
+.testimonialsSection .slick-slide {padding: 25px 10px;}
+.testimonialAuthor {border-top: 1px solid #e0e0e0;margin-top: 16px;padding-top: 16px;display: flex;align-items: center;gap: 15px;}
+.authorImg {min-width: 55px;}
+.authorImg img {width: 55px;height: 55px;border-radius: 50%;object-fit: cover;}
+.authorInfo h6 {font-size: 18px;font-weight: 600;line-height: 1.3;}
+.authorInfo p {font-size: 13px !important;color: var(--Is-gray);}
+.slick-dots li {margin: 0 !important;}
+.slick-dots li button:before {font-size: 10px !important;}
+
+
+/***************Footer***************/
+
+footer p {font-weight: 300 !important;}
+.footerSection {background-color: var(--Is-darkgreen);color: var(--Is-white);}
+.footerTop {padding: 30px 0 20px;border-bottom: 1px solid #118175;}
+.footerBottom {display: inline-block;width: 100%;padding: 30px 0;}
+.footerCopyright {border-top: 1px solid #118175;padding: 20px 0 20px;}
+.social-icons {display: flex;align-items: center;justify-content: flex-end;}
+.social-icons svg {background: #057c70;width: 35px;height: 35px;display: block;min-width: 35px;padding: 9px;border-radius: 50%;margin-left: 10px;}
+.social-icons svg path {fill: var(--Is-green);}
+.footerTop .MuiGrid-root.MuiGrid-container {align-items: center;}
+.social-icons h6 {font-size: 16px;color: var(--Is-green);}
+.social-icons svg:hover {background: var(--Is-hover);}
+.needHelp {color: var(--Is-green);font-weight: 300;font-size: 14px;padding-left: 40px;background: url(../public/help-icon.svg) no-repeat;background-position: left 9px;margin-bottom: 20px;}
+.needHelp .number {display: block;font-weight: bold;padding-top: 7px;}
+.locationMark {color: var(--Is-green);font-size: 16px !important;padding-left: 20px;background: url(../public/map-pin.svg) no-repeat;background-position: left 4px;font-weight: normal !important;margin: 15px 0 !important;}
+.newsletterForm {display: flex;}
+.newsletterForm input {background: #fff !important;border: none;border-radius: 5px 0 0 5px;padding: 12px;font-family: "Nunito Sans", sans-serif !important;}
+.newsletterForm fieldset {border: none;}
+.newsletterForm label {transform: translate(14px, 13px) scale(1);background: #fff;border-radius: 3px;transition: all 0.3s;font-family: "Nunito Sans", sans-serif !important;}
+.newsletterForm label.Mui-focused {color: #0a6259;transform: translate(14px, -9px) scale(1);font-size: 12px;padding: 2px 5px;}
+.newsletterForm button.MuiButtonBase-root {border-radius: 0 5px 5px 0;font-size: 0;min-width: 50px;background: url(../public/newsletter-icon.svg) no-repeat var(--Is-green);background-position: center;box-shadow: none;}
+.footerBottom h6 {font-weight: bold;color: var(--Is-green);font-size: 16px;margin-bottom: 10px;}
+ul.footer-list {padding: 0;margin: 0;list-style: none;}
+ul.footer-list li a {color: #fff;text-decoration: none;padding: 4px 0;display: inline-block;font-weight: 300;}
+.footerBottom .MuiGrid-grid-md-4 {padding-right: 3%;}
+.footerLinks {display: flex;gap: 14px;justify-content: flex-end;}
+.footerLinks a {color: #fff;text-decoration: none;font-weight: 300;}
+p a {font-weight: bold;text-decoration: none;color: var(--Is-darkgreen);}
+p.MuiTypography-root {margin-bottom: 15px;}
+
+
+/*************Login Page****************/
+
+.main-outer {padding-top: 60px !important;padding-bottom: 60px !important;}
+.main-outer .shadow-box, .shadow-box {display: inline-block;width: 100%;box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);border: 1px solid #ddd;border-radius: 20px;overflow: hidden;}
+.formLoginSignup {padding: 11% 0 5% 24px !important;max-width: 480px !important;margin: 0 auto !important;}
+.formLoginSignup h4 {font-size: 30px;font-weight: bold;margin-bottom: 15px;}
+.forgotPassword {text-align: right;}
+.forgotPassword a {font-size: 15px;color: var(--Is-black);font-weight: 600;text-decoration: none;padding: 10px 0;display: inline-block;}
+.forgotPassword a:hover {color: var(--Is-green);}
+.rememberMe {margin-bottom: 15px;}
+.formLoginSignup .green-btn {margin-top: 20px;}
+.loginWith {white-space: nowrap;}
+.socialLogin button {border: 1px solid #555;padding: 13px 15px;border-radius: 14px;background: transparent;display: flex;gap: 8px;font-size: 15px;}
+.socialLogin button svg.svg-inline--fa.fa-facebook {width: 20px;height: 20px;}
+.formInputFiled input {padding: 13px 15px;height: auto;}
+iframe[title="reCAPTCHA"] {transform: scale(0.8);transform-origin: 0 0;}
+
+
+/*************Registration Page****************/
+
+.registrationPageContainer .outerBox {background: #fff;width: 100%;box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);border: 1px solid #ddd;border-radius: 20px;padding: 0;}
+main .registrationPageContainer {padding: 50px 15px;max-width: 1140px;margin: 0 auto;}
+.registrationPageContainer .registrationPageContent {text-align: center;padding: 6% 5%;}
+.registrationPageContent h2 {margin: 0 0 30px;}
+.roleCheckboxGroup .MuiPaper-root {border: 1px solid #ddd;border-radius: 20px;padding: 20px;position: relative;overflow: visible;}
+.roleCheckboxGroup h6 {font-size: 24px;font-weight: 700;margin: 10px 0 2px;color: var(--Is-black);}
+.roleCheckboxGroup p.MuiTypography-root {margin-bottom: 5px;font-size: 15px !important;}
+.roleCheckboxGroup .MuiSheet-root.MuiSheet-variantOutlined {gap: 0;background: transparent;border-radius: 20px;box-shadow: none;border-color: #ddd;}
+.roleCheckboxGroup .Mui-checked .MuiRadio-action {border-radius: 20px !important;}
+.roleCheckboxGroup .Mui-checked svg path {fill: #55dba6;}
+.roleCheckboxGroup .MuiCardContent-root {padding: 0 !important;}
+.roleCheckboxGroup label.MuiFormControlLabel-root span.MuiTypography-root {display: none;}
+.roleCheckboxGroup label.MuiFormControlLabel-root {position: absolute;top: -15px;right: -15px;margin: 0;}
+img.agency_role, img.employer_role, img.helper_role {margin: 0 auto;}
+.roleCheckboxGroup .MuiCardContent-root {padding: 15px 0 !important;}
+.formLoginSignup .green-btn {width: 100%;}
+.green-btn {background: var(--Is-green) !important;color: var(--Is-black) !important;text-decoration: none !important;padding: 12px 30px !important;display: inline-block !important;font-size: 18px !important;font-weight: 600 !important;border-radius: 10px !important;min-width: 200px !important;box-shadow: none !important;text-transform: none !important;}
+.green-btn:hover {background: #65e5b2 !important;color: var(--Is-black) !important;}
+.formDataInfo .MuiFormControl-root {width: 100%;}
+.formDataInfo .formInputFiled {border: 1px solid #e7e7e7;border-radius: 10px;margin-bottom: 15px;background: #fff;}
+.formDataInfo .formInputFiled .formInputFiled {border: none;}
+.formDataInfo .Mui-focused {color: #000 !important;}
+.helperSignUpForm .formLoginSignup {padding: 5% 10px !important;}
+
+
+/*************Steps****************/
+
+.heroBanner {padding: 40px 15px !important;}
+.pageTitle {font-weight: bold !important;}
+.stepsContainer {padding: 30px 24px;max-width: 1280px !important;}
+.stepsRow .jgWUpd {background: transparent;padding: 0;margin: 0;}
+.stepsRow .MuiStepConnector-alternativeLabel {top: 36px;z-index: -1;}
+.stepsRow .MuiStep-alternativeLabel {text-align: center;}
+.stepsRow .MuiStepConnector-alternativeLabel span.MuiStepConnector-line {border-color: #ddd;}
+.stepsRow .MuiStep-alternativeLabel .jVIKFk {background: #fff;border: 1px solid #ddd;}
+.stepsRow .MuiStep-alternativeLabel span {font-weight: 600;font-size: 14px;color: var(--Is-gray);}
+.stepsRow .MuiStep-alternativeLabel h4 {font-size: 20px;font-weight: 600;margin-top: 8px;line-height: 22px;}
+.stepsRow {margin-top: 0 !important;}
+.stepsFormRow {margin: 30px 0 !important;}
+.stepsForm {background: var(--Is-gray-bg);padding: 0 !important;}
+.StepFormCol {background: transparent !important;padding: 30px !important;border: none !important;box-shadow: none !important;text-align: left !important;}
+.queTitle,.formLabel {font-size: 16px !important;font-weight: 600 !important;margin: 0 0 5px !important;color: var(--Is-black) !important;word-break: break-all;}
+.queRow {margin-bottom: 17px !important;}
+.stepsSidebarImg {position: relative;padding: 25% 0 !important;}
+.stepsSidebarImg img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 90%;height: 94%;}
+.radioCheckBtn {display: flex;flex-direction: unset !important;}
+.queRow fieldset {border: none;box-shadow: none;}
+.react-international-phone-country-selector button.react-international-phone-country-selector-button {padding: 12px 15px;height: auto;border-radius: 10px 0 0 10px;border-color: #c9c9c9;}
+.queRow .react-international-phone-input-container .react-international-phone-input {padding: 12px 15px;height: auto;font-size: 16px;border-radius: 0 10px 10px 0;border-color: #c9c9c9;}
+.queRow .MuiSelect-select.MuiSelect-outlined {padding: 12px 15px;}
+.formDataInfo input.formInputFiled.full-width-datepicker {padding: 13px 40px 13px 15px;font-size: 16px;height: auto;}
+.queRow .react-datepicker__input-container .react-datepicker__calendar-icon {right: 13px;top: 50%;transform: translateY(-50%);padding: 0;}
+.formDataInfo .queRow .formInputFiled {margin: 0;}
+.LocationAutocomplete input {padding: 13px 15px;border: 1px solid #c9c9c9;border-radius: 10px;font-size: 16px;}
+.formLabel.large {font-size: 22px !important;}
+.skillsCol {margin-bottom: 15px;}
+.MuiSwitch-root span.MuiSwitch-track {background-color: #fff !important;border: 1px solid var(--Is-gray);}
+.MuiSwitch-root .Mui-checked + .MuiSwitch-track {border: 1px solid var(--Is-darkgreen);}
+span.MuiSwitch-thumb {color: var(--Is-gray);}
+.MuiSwitch-root .Mui-checked span.MuiSwitch-thumb {color: var(--Is-darkgreen);}
+.switcher span.MuiTypography-root {font-size: 14px;}
+.anotherLanguage {margin-bottom: 30px;}
+.queRow.certificate {border-bottom: 1px solid #ddd;}
+.radioCheckBtn label {position: relative;padding: 6px 13px 6px 7px;margin-left: 0;margin-right: 10px;margin-bottom: 10px;}
+.FileUploadtion.d-block label {margin-bottom: 10px;}
+.radioCheckBtn label .PrivateSwitchBase-root {padding: 0;position: static;}
+.radioCheckBtn label .PrivateSwitchBase-root:before {position: absolute;width: 100%;height: 100%;left: 0;top: -1px;background-color: #fff;content: "";border: 1px solid #c9c9c9;border-radius: 50px;z-index: 0;}
+.radioCheckBtn label .PrivateSwitchBase-root svg, .radioCheckBtn label .PrivateSwitchBase-root span {z-index: 1;}
+.radioCheckBtn .MuiFormControlLabel-label {position: relative;margin-left: 3px;}
+.radioCheckBtn label .PrivateSwitchBase-root svg {fill: #c9c9c9;font-size: 1.4em;}
+.radioCheckBtn label .Mui-checked::before {border-color: var(--Is-darkgreen);background: var(--Is-darkgreen);}
+.radioCheckBtn label .Mui-checked svg {fill: var(--Is-white);}
+.radioCheckBtn label .Mui-checked + .MuiFormControlLabel-label {color: var(--Is-white);font-size: 15px;}
+
+
+/*************Dashboard****************/
+
+.dashboardSidebar {width: 100% !important;max-width: 250px !important;margin: 0;border: none;background: var(--Is-gray-bg);padding: 110px 20px 0px;height: 100%;position: fixed;left: 0;top: 0;}
+.dashboardContentArea {width: calc(100% - 250px);padding: 30px;margin-left: 250px;margin-left: auto;min-height: calc(100vh - 137px);}
+ul.sidebar {margin: 0;border: none;background: transparent;padding: 0;display: flex;flex-direction: column;height: 100%;}
+.sidebar .sidebarItem {cursor: pointer;padding: 6px 20px;color: var(--Is-black);text-decoration: none;border-radius: 5px;margin-bottom: 5px;}
+.sidebarItem:not(.active):hover {background: linear-gradient(90deg, #057c70 0%, #55dba6 100%);color: #fff;}
+.sidebarItem:not(.active):hover img {filter: brightness(0) invert(1);}
+.sidebarItem.active {background: linear-gradient(90deg, #057c70 0%, #55dba6 100%);color: #fff;}
+.sidebarItem img, .sidebarItem svg {margin-right: 11px;}
+.sidebarItem.logout {margin-top: auto;border-top: 1px solid rgb(10 98 89 / 20%);border-radius: 0;padding-top: 4px;background: transparent !important;color: var(--Is-black) !important;transition: 0.4s ease-in-out;}
+.sidebarItem.logout:hover {opacity: 0.7;}
+.sidebarItem.logout:hover svg.customSvG * {fill: #646464 !important;}
+.sidebarItem.logout:hover img {filter: none !important;}
+
+
+/*************Job List****************/
+
+h2.commonTitle {font-size: 30px;font-weight: bold;letter-spacing: 0;}
+.topFilter {background: #f5f5f5;padding: 30px;border-radius: 20px;margin-bottom: 20px;}
+.JobsListRow h5 {font-size: 20px;font-weight: bold;padding: 10px 20px;}
+.JobBox {border: 1px solid #c9c9c9;border-radius: 15px;margin-bottom: 25px;display: flex;}
+.JobInfoBox {width: 100%;max-width: 280px;background: var(--Is-gray-bg);border-right: 1px solid #c9c9c9;padding: 20px;border-radius: 15px 0 0 15px;}
+.jobsFlex {display: flex;align-items: center;gap: 10px;}
+.jobsFlex img.work {width: 50px;}
+.JobTitle h6, .JobInfoRight h6 {margin: 0;line-height: 1.2;font-size: 18px;font-weight: 700;cursor: pointer;}
+.featuredTag {display: flex;align-items: center;color: #000000;font-weight: 700;font-size: 15px;margin-bottom: 20px;}
+.featuredTag svg {margin-right: 5px;}
+.JobTitle p.MuiTypography-root {font-size: 14px !important;margin: 0;}
+.JobdetailBottom p {margin-bottom: 5px;font-size: 14px !important;}
+.JobdetailBottom {margin-top: 20px;}
+.JobInfoRight {padding: 25px;position: relative;width: 100%;display: flex;flex-direction: column;}
+.JobInfoRight p {font-size: 14px !important;color: #646464;margin-bottom: 25px;line-height: 24px;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;}
+.green-btn.small {padding: 9px 25px !important;min-width: 140px !important;}
+button + button {margin-left: 10px !important;}
+.buttonFlex {display: flex;gap: 10px;justify-content: space-between;margin-top: auto;}
+.JobInfoRight h6 {margin-bottom: 15px;}
+.pagination .page-link {color: var(--Is-black) !important;border-radius: 10px !important;width: 38px !important;text-align: center !important;}
+.pagination .active > .page-link {background: var(--Is-green) !important;border-color: var(--Is-green) !important;color: var(--Is-black) !important;}
+ul.pagination {margin-bottom: 20px;}
+.send-msg-btn {
+  padding: 9px 25px !important;
+}
+.checked-icon {
+  z-index: 2;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  fill: #55dba6 !important;
+  border-radius: 40%;
+}
+.file-container{
+position:"relative"!important;
+}
+.declined-icon{
+  z-index: 2;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  fill: #FF0000!important;
+  border-radius: 40%;
+}
+
+
+/* 19/02/2024 */
+
+.languageBtn {background: #e3e3e3 !important;box-shadow: none !important;width: auto;display: inline-block !important;max-width: 260px;padding: 11px !important;color: #000000 !important;text-transform: none !important;font-size: 16px !important;letter-spacing: 0 !important;border: 1px solid #c9c9c9 !important;border-radius: 12px !important;transition: 0.4s ease-in-out !important;}
+.languageBtn:hover {background: #c9c9c9 !important;box-shadow: none !important;color: #000 !important;}
+button.delBtn {padding: 0 !important;color: red !important;text-transform: none !important;letter-spacing: 0 !important;font-size: 16px !important;box-shadow: none !important;background: transparent !important;line-height: normal !important;}
+.UploadFileCustom {width: 100%;margin: 0 !important;}
+.UploadFileCustom .certificateCheck {width: 100%;}
+.FileUploadtion {display: flex;padding: 20px 0;}
+.inputFile input::after {content: "Upload Certificate";color: black;font-size: 18px;position: absolute;top: 11px;left: 50px;}
+.inputFile input {padding: 10px;border-radius: 12px;background: #e3e3e3;border: 1px solid #c9c9c9;font-size: 0;width: 100% !important;min-height: 24px;width: 200px !important;transition: 0.4s ease-in-out;}
+.inputFile input:hover {background: #c9c9c9;}
+.css-bz5ng3-MuiInputBase-root-MuiInput-root::after {border: none;}
+.inputFile input::before {content: "";position: absolute;height: 30px;width: 30px;background: #e3e3e3;top: 10px;left: 11px;}
+.inputFile .css-bz5ng3-MuiInputBase-root-MuiInput-root::before {display: none;}
+.inputFile {position: relative;}
+.inputFile svg {position: absolute;z-index: 1;top: 14px;left: 15px;}
+.FileUploadtion.d-block {display: block;}
+.queRow.certificate.lastChild {border: none;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+.workingExperienceTab {background: #f9f9fa;}
+.customAgeBox {padding: 20px;border: 1px solid #c9c9c9;border-radius: 10px;margin-bottom: 15px;background: #fff;}
+.radioCheckBtn .wrapSpecialCare {position: relative;margin-bottom: 12px;}
+.radioCheckBtn .wrapSpecialCare svg.svgCust {position: absolute;z-index: 1;right: 20px;top: 4px;}
+.radioCheckBtn .wrapSpecialCare label {padding: 6px 52px 6px 7px;}
+.radioCheckBtn .wrapSpecialCare svg.svgCust * {fill: #646464;}
+.radioCheckBtn .wrapSpecialCare svg.svgCust.wheelchair * {fill: transparent;stroke: #646464;}
+.radioCheckBtn .wrapSpecialCare label .Mui-checked + svg.svgCust * {fill: #fff;}
+.UploadFileCustom .css-1eed5fa-MuiInputBase-root-MuiInput-root::before {display: none;}
+.UploadFileCustom.queRow {margin-bottom: 17px !important;}
+.radioCheckBtn.otherTasks label {margin-bottom: 12px;}
+.uploadPhoto {display: flex;align-items: center;justify-content: center;margin-top: 30px;}
+.uploadPhoto .UploadFileCustom {width: auto;}
+.uploadPhoto .imgWrap img {width: 150px;height: 150px;border-radius: 50%;overflow: hidden;position: relative;border: 6px solid #0a6259;}
+.uploadPhoto .imgWrap {margin-right: 20px;}
+.uploadPhoto .UploadFileCustom input[type="file"] {min-height: 43px;width: 180px !important;box-sizing: border-box;}
+.uploadPhoto .UploadFileCustom input[type="file"]:after {content: "Upload Photo";}
+p.later {color: #646464;margin-top: 4px;margin-bottom: 0;}
+.helperdocWelcome {margin: 60px auto;padding: 24px !important;box-shadow: 0px 0px 20px 0px #0000001a !important;}
+.helperdocWelcome h4 {font-size: 30px;font-weight: 700;}
+.helperdocWelcome p span {display: block;font-size: 18px;}
+.helperdocWelcome p {font-size: 14px !important;}
+.helperdocWelcome input {width: 56px;text-align: center;}
+.helperdocWelcome fieldset {width: 56px;}
+.helperdocWelcome .MuiFormControl-root.MuiTextField-root {width: 56px !important;}
+.helperdocWelcome button {background: #55dba6;color: #000;text-transform: none;font-size: 18px;font-weight: 600;letter-spacing: 0;padding: 7px 30px;box-shadow: none;border-radius: 12px;margin-bottom: 30px;}
+.helperdocWelcome a {color: #000;}
+.sidebarItem svg.customSvG * {fill: #646464;}
+.sidebarItem.active svg.customSvG *, .sidebarItem:not(.active):hover svg.customSvG * {fill: #fff;}
+.jobDescMini li {padding: 0;margin-bottom: 5px;font-size: 14px;align-items: flex-start;}
+.jobDescMini li strong {margin-right: 9px;}
+.jobDescMini li span a {display: block;}
+.jobDescMini li span a {color: #0a6259;font-weight: 700;}
+.jobDescMini li span i {font-style: normal;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;max-width: 138px;}
+.JobdetailBottom .postedTime {color: #8d8d8d;margin: 0;}
+.customTabs {margin-bottom: 20px;}
+.customTabs .MuiTabs-flexContainer {display: inline-block;}
+.customTabs button {text-transform: none;letter-spacing: 0;color: #B6B6B6 !important;font-size: 18px;font-weight: 700;border-bottom: 2px solid transparent;background: transparent !important;transition: 0.4s ease-in-out;padding: 4px 8px;line-height: normal;min-height: auto;}
+.customTabs button:hover {color: #0a6259 !important;}
+.customTabs button.Mui-selected {color: #0a6259 !important;border-color: #55dba6;}
+.appliedTag {position: absolute;right: 50px;top: -11px;z-index: 1;}
+.profileCompletion {margin-top: 5px !important;font-size: 18px !important;}
+.profileCompletion strong {font-size: 20px;}
+.profileCompletion a {font-size: 18px;color: #646464;font-weight: normal;text-decoration: underline;}
+.profileCardBox {box-shadow: 0px 0px 20px 0px #0000001a;}
+.profileCardBox {box-shadow: 0px 0px 20px 0px #0000001a;}
+label.profileUpload span.MuiButtonBase-root {border: 5px solid #0a6259;padding: 0;}
+label.profileUpload button {background: #fff;box-shadow: 0px 2px 4px 0px #00000026;}
+.TopDesc p {color: #000;margin: 0;font-size: 16px !important;}
+.TopDesc span.dangerText {text-transform: uppercase;color: red;}
+.notificationList {padding: 20px 0;border-bottom: 1px solid #e1e1e1;align-items: flex-start;margin: 0;}
+.notificationList:first-child {padding-top: 0;}
+.notificationList svg.notificationIcon {height: 45px;width: 45px;background: #55dba6;border-radius: 50px;padding: 8px;}
+.notificationList svg.notificationIcon * {fill: #000000;}
+.notificationList:last-child {border: none;margin: 0;}
+.notificationList h6 {font-weight: 700;color: #000000;font-size: 18px;}
+.notificationList p {color: #000000;font-size: 14px;font-weight: 300;margin: 0;}
+.notificationList span {color: #0a6259;font-size: 16px;font-weight: 600;letter-spacing: 0;}
+.topChatHeading p {margin: 0;}
+.topChatHeading .formInputFiled {border: 1px solid #c9c9c9;border-radius: 10px;background: #fff;}
+.chatMemberList {border: 1px solid #e7e7e7;background: #f9f9fa;border-radius: 6px;padding: 13px;display: flex;align-items: center;justify-content: center;margin-bottom: 10px;}
+.chatMemberList .avatar {border: 2px solid #0a6259;}
+.chatMemberList .senderInfo {display: flex;align-items: center;}
+.chatMemberList .senderInfo h5 {margin: 0;margin-left: 12px;font-size: 16px;color: #000000;font-weight: 700;}
+.chatMemberList .applicationDot {margin: 0;}
+.chatMemberList .applicationDot span {width: 10px;height: 10px;display: inline-block;background: #f5a623;border-radius: 50%;margin-right: 10px;}
+.chatMemberList .message span {color: #646464;font-size: 14px;}
+.chatMemberList .message p {font-size: 14px;margin: 0;color: #000000;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;max-width: 60%;}
+.chatMemberList p.timings {margin: 0;color: #000000;font-size: 13px !important;text-align: right;}
+.ChatSidebar {background: #f5f5f5;border-radius: 30px;padding: 30px;min-height: calc(100vh - 270px);}
+.chatProfileInfo {text-align: center;}
+.chatProfileInfo .MuiAvatar-root {margin: 0 auto;margin-bottom: 10px;border: 4px solid #0a6259;}
+.chatProfileInfo h4 {color: #000000;font-size: 20px;font-weight: 700;margin-bottom: 10px;}
+.chatProfileInfo p.applicationDot {margin: 0;}
+.chatProfileInfo p.applicationDot span {width: 10px;height: 10px;display: inline-block;background: #f5a623;border-radius: 50%;margin-right: 10px;}
+.bottomDetails button.green-btn {width: 100%;margin: 0 0 10px 0 !important;font-size: 16px !important;letter-spacing: 0 !important;padding: 10px !important;}
+.chatDisplay {padding: 10px 0;}
+.chatDisplay img.work {background: #f2f2f2;border-radius: 4px;width: 70px;padding: 10px;}
+.chatInput .MuiInputBase-root {border-radius: 40px;}
+.chatInput .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {border-radius: 40px;padding: 6px;border-color: #C9C9C9;outline: none;}
+.chatInput .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root input {height: auto;padding: 10px;}
+.chatInput button.attach svg * {fill: #000000;}
+.chatInput button.sendicon {background: #0A6259;width: 43px;height: 43px;}
+.chatInput button.sendicon svg * {fill: #fff;}
+
+
+/* Chatbox Design */
+
+.primaryChat {display: flex;max-width: 60%;margin-bottom: 20px;}
+.primaryChat .messageView {margin-left: 10px;}
+.primaryChat .messageView .Box {border: 1px solid #c9c9c9;border-radius: 10px;padding: 10px;color: #000000;font-size: 14px;font-weight: 400;}
+.primaryChat .messageView p {margin: 0;font-size: 12px !important;margin-top: 6px;color: #000;}
+.SecondaryChat {float: right;display: flex;max-width: 60%;margin-bottom: 20px;}
+.SecondaryChat .messageView {margin-right: 10px;text-align: right;}
+.SecondaryChat .messageView .Box {border: 1px solid #c9c9c9;border-radius: 10px;padding: 10px;font-size: 14px;font-weight: 400;background: #0a6259;color: #fff;display: inline-block;text-align: left;line-height: normal;position: relative;}
+.SecondaryChat .messageView p {margin: 0;font-size: 12px !important;margin-top: 6px;color: #000;text-align: right;display: inline-block;width: 100%;}
+.chatMsgs {width: 100%;display: inline-block;}
+.subHead {font-weight: 700;color: #000000;font-size: 20px;margin: 0;}
+.pushsetting .gridsetting {display: flex;}
+.pushsetting .gridsetting .primary {max-width: 400px;margin-right: 100px;}
+.pushsetting .gridsetting .primary p {margin: 0;}
+.pushsetting .gridsetting .secondary {flex-direction: column;display: flex;align-items: center;justify-content: center;}
+hr.hrSetting {margin: 20px 0;border: 1px solid #ebebeb !important;}
+.editEmail h6 {display: flex;font-size: 20px;margin: 0;}
+.editEmail h6 a {margin-left: 10px;}
+.passwordUpdate h6 {display: flex;font-size: 20px;font-weight: 700;margin-bottom: 20px;}
+.passwordinput .MuiFormGroup-root .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary {border-radius: 10px;border-color: #c9c9c9;}
+.passwordinput {max-width: 60%;margin-bottom: 8px !important;}
+.passwordinput .MuiFormGroup-root {margin-right: 10px;}
+.resetPass {margin-bottom: 30px !important;font-size: 14px !important;font-weight: 400 !important;color: #000000 !important;}
+.delLink {padding: 0;font-size: 16px;color: #ff0000;letter-spacing: 0;font-weight: 400;}
+.jobsFlex.jobDescription {flex-direction: column;align-items: flex-start;}
+.btn-transparent {padding: 9px 25px !important;background: TRANSPARENT !important;color: #0a6259 !important;font-size: 18px !important;font-weight: 600 !important;border-radius: 10px !important;box-shadow: none !important;text-transform: none !important;display: flex !important;align-items: center !important;border: 1px solid #0a6259 !important;letter-spacing: 0 !important;line-height: 1.75 !important;width: auto;min-width: auto !important;}
+.btn-light {padding: 9px 25px !important;background: #f1f1f1 !important;color: #0a6259 !important;font-size: 18px !important;font-weight: 600 !important;border-radius: 10px !important;box-shadow: none !important;text-transform: none !important;display: flex !important;align-items: center !important;border: 1px solid transparent !important;letter-spacing: 0 !important;line-height: 1.75 !important;width: auto;min-width: auto !important;}
+.btn-transparent svg {margin-right: 6px;}
+.ViewOptionDesc .green-btn {border: 1px solid transparent;}
+.detailingJob {margin-bottom: 40px;}
+.detailingJob h6 {font-size: 20px;font-weight: bold;margin-bottom: 20px;}
+.detailingJob p {font-size: 16px;font-weight: 400;line-height: 31px;color: #000000;}
+.detailingJob ul li {position: relative;}
+.detailingJob ul li:before {content: "";position: absolute;height: 8px;width: 8px;background: #000;left: 0;border-radius: 50px;}
+.reviewsJob .jobsFlex {align-items: flex-start;margin-bottom: 40px;}
+.reviewsJob .jobsFlex .reviewavtar {border: 1px solid #55dba6;border-radius: 12px;min-width: 40px;height: 40px;width: 40px;padding: 8px;position: relative;}
+.reviewsJob .jobsFlex h6 {display: flex;align-items: center;}
+.reviewsJob .jobsFlex h6 span {margin-left: 10px;color: #e9751e;}
+.reviewsJob .jobsFlex h6 span span {margin: 0;}
+.reviewsJob .jobsFlex p.dateReview {font-size: 14px;color: #8d8d8d;letter-spacing: 0;}
+.reviewsJob .jobsFlex p {font-size: 16px !important;font-weight: 400;line-height: 31px;color: #000000;}
+.ViewOptionDesc .d-flex {display: flex;}
+.ViewOptionDesc {display: flex !important;align-items: flex-end !important;justify-content: space-between !important;flex-direction: column !important;}
+.footerDash.dashboardContentArea {background: #e2e2e2;}
+.footerDash p {margin: 0;text-align: center;}
+.employertitle_small {color: #0a6259;font-size: 20px !important;font-weight: 700 !important;}
+.planName {background: #d8ad30;padding: 25px;text-align: center;border-radius: 10px;color: #fff;display: flex;flex-direction: column;align-items: center;justify-content: space-around;}
+.planName .arrowButton.whitebtn {background-color: #fff;color: #000 !important;font-weight: 700;letter-spacing: 0;font-size: 20px;border: 1px solid #fff;}
+.planName h3 {font-size: 20px;font-weight: 700;text-transform: uppercase;}
+.planName p {margin-top: 16px;font-size: 16px;line-height: 21.82px;}
+.planName .arrowButton.whitebtn:hover {color: #fff !important;background-color: transparent !important;}
+.subscriptionPlans_ds {padding-left: 24px;padding-bottom: 24px;padding-top: 24px;}
+.planName img {display: inline-block;margin-bottom: 15px;}
+.planName.visaServices {background: #0a6259;}
+.applicantsEmployer {padding: 24px 0px 0px 24px;margin-top: 20px;}
+.applicantsEmployer .findHelperTitle {padding-bottom: 0;}
+.applicant_age {padding-left: 20px;background: url(../public/calendar-icon.svg) no-repeat;background-position: left center;background-size: 12px;}
+.work_Profile {margin: 30px 0;}
+.helpersCol.employerapplicant {flex-direction: column;gap: 0;}
+.helpersCol.employerapplicant .profileUpper {display: flex;align-items: center;gap: 15px;margin-bottom: 20px;}
+.work_Profile .job_role {color: #55dba6;line-height: 16.37px;font-size: 12px !important;font-weight: 700;letter-spacing: 2px;margin-bottom: 5px;}
+.work_Profile .job_title {font-size: 18px !important;color: #000000;font-weight: 400;margin-bottom: 5px;}
+.work_Profile .job_desc {color: #646464;font-size: 14px !important;margin-bottom: 5px;}
+.employerapplicant .buttonFlex button {width: 50%;background: #0a6259;text-align: center;padding: 9px 12px !important;}
+.jobPost {border: 1px solid #e7e7e7;border-radius: 10px;position: relative;}
+.jobPost .profileRole {border-bottom: 1px solid #d9d9d9;background: #f9f9fa;padding: 10px 20px;border-radius: 10px 10px 0 0;display: flex;align-items: center;justify-content: space-between;}
+.jobPost .profileRole h6 {color: #55dba6;font-size: 16px !important;font-weight: 700 !important;letter-spacing: 2px;}
+.jobPost .profileInner {padding: 20px;}
+.jobPost .profileInner .job_title {font-weight: 700;font-size: 16px !important;margin: 0;}
+.jobPost .profileInner div {display: flex;align-items: center;justify-content: space-between;}
+.jobPost .profileInner .status {margin: 0;background: #32bfa3;color: #fff;text-transform: uppercase;padding: 5px 10px;line-height: normal;font-size: 12px !important;font-weight: 700;border-radius: 3px;}
+.jobPost .profileInner .job_desc {margin-top: 20px;color: #646464;font-size: 14px !important;line-height: 18px;font-weight: 400;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+.profileInsights {display: flex;align-items: center;justify-content: space-between;border-top: 1px solid #d9d9d9;}
+.profileInsights .job_title {width: 50%;text-align: center;margin: 0;padding: 10px;border-right: 1px solid #d9d9d9;font-size: 14px !important;}
+.profileInsights .job_desc {width: 50%;margin: 0;text-align: center;padding: 10px;font-size: 14px !important;}
+.profileInsights .job_title span, .profileInsights .job_desc span {font-size: 16px;font-weight: 700;}
+.footerDash.dashboardContentArea.employerFooter {display: flex;justify-content: space-between;background: #55dba6;z-index: 1;bottom: 0;right: 0;min-height: auto;padding: 10px;}
+.employerFooter ul {display: flex;width: 100%;padding: 0;}
+.employerFooter ul li {padding: 0;display: flex;align-items: center;justify-content: center;border-right: 1px solid #000;}
+.employerFooter ul li a {color: #000;text-decoration: none;font-size: 16px !important;font-weight: 400;line-height: 22px;display: inline-block;padding: 0px 10px;width: 100%;text-align: center;text-wrap: nowrap;}
+.employerFooter ul li:last-child {border: none;}
+.footerDash.dashboardContentArea.employerFooter .footerLinks {display: flex;}
+.applicantSidebar {background: #f5f5f5;border-radius: 25px;padding: 20px;border: 1px solid #e7e7e7;}
+.applicantSidebar .profileUpper {display: flex;align-items: center;gap: 15px;}
+.applicantSidebar li {border-bottom: 1px solid #e7e7e7;opacity: 0.3;padding: 14px 10px !important;}
+.applicantSidebar li.selected {opacity: 1;}
+.applicantSidebar li:last-child {border-bottom: none;}
+.applicantSidebar {background: #f5f5f5;border-radius: 25px;}
+.applicantSidebar .profileUpper {display: flex;align-items: center;gap: 15px;}
+.applicantSidebar li a {text-decoration: none;color: #000;width: 100%;position: relative;}
+.applicantSidebar li a .arrowRight {position: absolute;right: 0;}
+.helpder_details_dmc h4 {display: flex;align-items: center;font-size: 18px;font-weight: 700;color: #000000;margin-bottom: 20px;}
+.helpder_details_dmc h4 img {margin-right: 10px;}
+.helpder_details_dmc ul li {background: #fff;padding: 15px 20px;display: flex;align-items: center;justify-content: space-between;border: 1px solid #d8d8d8 !important;border-radius: 5px;margin-bottom: 10px;}
+.helpder_details_dmc ul li:last-child {margin: 0;}
+.helpder_details_dmc ul li p {margin: 0;font-size: 16px !important;color: #000;font-weight: 400;}
+.applicantDetails {padding: 30px;border: 1px solid #e7e7e7;margin-left: 30px;border-radius: 30px;}
+.employerHeader .primary {display: flex;gap: 15px;align-items: center;}
+.employerHeader .primary .helperImg img {width: 80px;height: 80px;}
+.applicantRespond {display: flex;}
+.applicantRespond button {width: 100%;}
+.applicantRespond .dangerbtn.green-btn.small {background: #e23c3c !important;color: #fff !important;}
+.highlightsApplicant h5 {font-size: 20px !important;font-weight: 700;margin-bottom: 10px;}
+.highlightsApplicant p {font-weight: 400;color: #646464;font-size: 16px !important;}
+.highlightsApplicant ul {margin: 0;padding: 0;margin-bottom: 10px;}
+.highlightsApplicant ul li {margin: 0;padding: 0;line-height: 30px;}
+.highlightsApplicant ul li b {font-weight: 400;color: #000;min-width: 200px;}
+.highlightsApplicant ul li span {color: #646464;}
+.highlightsApplicant ul li span {width: calc(100% - 150px);}
+a.greenLink {display: block;margin-bottom: 30px;color: #55dba6;font-size: 20px;text-decoration: none;font-weight: 700;}
+.jobOfferby {font-size: 14px !important;color: #646464;}
+.helpersCol.savedProfile .job_role {font-size: 20px !important;margin-bottom: 20px;}
+.helpersCol.savedProfile .work_Profile {margin-bottom: 0;}
+.job_date {font-size: 14px !important;text-align: end;margin: 0 !important;color: #646464;}
+.applicantSidebar.Inner .applicantAvtr {text-align: center;}
+.applicantSidebar.Inner .applicantAvtr img {display: inline-block;border: 5px solid #0a6259;border-radius: 80px;}
+.applicantSidebar.Inner .applicantInfo h3 {font-size: 20px;text-align: center;font-weight: 700;}
+.applicantSidebar.Inner .applicantInfo {margin: 30px 0 50px;}
+.applicantSidebar.Inner .applicantInfo p {text-align: center;color: #646464;font-size: 16px !important;}
+.applicantSidebar.Inner .applicantInfo ul {padding: 0;}
+.applicantSidebar.Inner .applicantInfo ul li {border: none;padding: 0 !important;opacity: 1;margin-bottom: 10px;display: flex;align-items: center;color: #0a6259;}
+.applicantSidebar.Inner .applicantInfo ul li img {margin-right: 12px;}
+.applicantSidebar.Inner .applicantInfo ul li strong {margin-right: 6px;color: #000;font-weight: 400;}
+.applicantSidebar.Inner button {width: 100%;margin-top: 10px;margin-left: 0 !important;}
+.highlightsApplicant .dutiesList p {font-size: 16px !important;color: #000000;text-transform: capitalize;font-weight: 700;margin-bottom: 6px;}
+.highlightsApplicant .dutiesList ul li {padding: 6px 20px;border: 1px solid #C9C9C9;border-radius: 40px;margin-right: 10px;display: inline-block;text-align: center;width: auto;margin-bottom: 10px;line-height: normal;color: #808285;}
+.highlightsApplicant .dutiesList ul {display: inline-block;width: 100%;margin: 0;}
+.wishlistIcon img {transition: 0.4s ease-in-out;}
+.wishlistIcon img:hover {filter: brightness(0.3);}
+.HeaderProfile {padding: 30px !important;}
+.HeaderProfile button {height: 40px;width: 40px;display: flex;align-items: center;justify-content: center;border-radius: 50px;border: 1px solid #fff;padding: 0;min-width: auto;}
+.hightlightProfile p {margin: 0;font-size: 18px;color: #000000;}
+.hightlightProfile button {border: 1px solid #b4edd6;background: #e0fff3;color: #000;border-radius: 50px;text-transform: none;letter-spacing: 0;font-size: 14px !important;font-weight: 600;line-height: normal;}
+.CvView {padding-top: 40px;}
+.CvView img#avatar {border: 4px solid #0a6259;border-radius: 50px;}
+.CvView h5 {font-size: 36px;font-weight: 700;}
+.CustomPara {font-size: 18px !important;color: #000000;line-height: 30px;}
+.aboutProfile ul {display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 8px;}
+.aboutProfile ul li {padding: 0;}
+.aboutProfile ul li b {width: 140px;}
+.aboutProfile ul li span {width: calc(100% - 140px);color: #646464;}
+.aboutProfile h6 {font-size: 20px;font-weight: 700;}
+.profileCard {box-shadow: 0 0 20px 4px #0000001a;border-radius: 20px !important;}
+.profileCard .MuiCardContent-root {padding: 40px;}
+.profileCard .MuiCardContent-root h5 {font-size: 22px;margin-bottom: 20px;}
+.expList .expImgWrap {border: 1px solid rgb(85, 219, 166);border-radius: 20%;padding: 6px;margin-right: 20px;width: 60px;height: 60px;display: flex;align-items: center;justify-content: center;position: relative;background-color: #fff;z-index: 1;}
+.expList .expImgWrap:after {content: "";position: absolute;height: 100px;width: 1px;background: #55dba6;z-index: -1;top: 100%;}
+.expList .expImgWrap img {max-width: 100%;}
+.expList h6 {font-size: 18px;font-weight: 700;}
+.expList .date {color: #646464;margin: 0;font-size: 16px !important;}
+.expList p.profileRole {font-size: 14px !important;letter-spacing: 0;}
+.expList p.description {font-size: 16px !important;}
+.expList:last-child .expImgWrap:after {display: none;}
+.LangDisplay .expList h6 {font-size: 18px !important;font-weight: 700;}
+.LangDisplay .expList p {margin: 0;font-size: 16px !important;color: #646464 !important;}
+.profileSkillset li {display: inline-block;width: auto;padding: 10px 24px;border: 1px solid #c9c9c9;margin-right: 10px;border-radius: 40px;color: #808285;}
+.profileSkillset {margin-bottom: 20px;}
+.docListProfile {display: flex;}
+.docListProfile li {border: 1px solid #55dba6;margin-right: 10px;border-radius: 17px;padding: 16px;}
+.docListProfile li a {text-align: center;display: inline-block;color: #000;text-decoration: none;}
+.docListProfile li a img {display: block;margin: 0 auto 10px;}
+.docListProfile li p {margin: 0;font-size: 12px !important;width: 100px;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+input.formInputFiled {padding: 13px 15px;height: auto;outline: none;}
+.workingExp label#moreWorkExperince {margin-bottom: 10px !important;}
+.workingExp .radioCheckBtn label .PrivateSwitchBase-root:before {border-radius: 10px;padding: 13px 15px;}
+.workingExp .radioCheckBtn label {padding: 13px 15px;}
+.skillsCol {margin-bottom: 23px;}
+.skillsCol .radioCheckBtn label {padding: 8px 16px 8px 11px;}
+.profile-section {display: flex;justify-content: space-between;}
+.profile-section .file-input {width: 100%;border: 1px dashed #aaa;border-radius: 12px;display: flex;align-items: center;justify-content: center;position: relative;min-height: 150px;}
+.profile-section .file-input input {position: absolute;width: 100%;height: 100%;opacity: 0;}
+.profile-section .file-input label.file-upload-label span {display: block;font-size: 14px;margin-top: 12px;}
+.profile-section .file-input label.file-upload-label {text-align: center;}
+.noteSpecified {width: 100%;text-align: center;padding: 12px;}
+.noteSpecified p {margin: 0;color: #ff0000;font-size: 22px !important;}
+.customModal .css-1t1j96h-MuiPaper-root-MuiDialog-paper {width: 100%;background: transparent;box-shadow: none;align-items: center;}
+.customModal .innerModal {margin: 0;width: 100%;box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);padding: 40px;max-width: 500px;}
+.customModal .innerModal h4 {color: #000000;font-size: 24px !important;font-weight: 700 !important;}
+.customModal .innerModal p {margin-top: 0;font-size: 14px !important;}
+.customModal .innerModal button {padding: 9px 25px ;min-width: 140px ;background: #55dba6;font-size: 18px ;font-weight: 600 ;border-radius: 10px ;color: #000;text-transform: none;letter-spacing: 0;box-shadow: none;}
+.errorButton {padding: 9px 25px !important;min-width: 140px !important;background: #55dba6;font-size: 18px !important;font-weight: 600 !important;border-radius: 10px !important;color: #000;background: #ff0000 !important;text-transform: none;letter-spacing: 0;box-shadow: none;}
+
+/* modal css */
+.profilePopup .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  background: transparent;
+  box-shadow: none;
+}
+
+.profilePopup .popupInner {
+  border-radius: 20px;
+  padding: 70px !important;
+  width: 510px;
+}
+
+.profilePopup .popupInner img {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.profilePopup .popupInner p {
+  font-size: 14px !important;
+  color: #000000;
+  margin: 0;
+}
+
+.profilePopup .popupInner h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profilePopup .popupInner a.green-btn.small {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 18px !important;
+}
+
+.customModal .innerModal button.customPRofilebtn {
+  background: transparent !important;
+  color: #000 !important;
+  padding: 0 20px !important;
+  text-decoration: underline;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  line-height: normal;
+}
+
+.customModal .innerModal button.customPRofilebtn:first-child {
+  border-right: 1px solid #000 !important;
+}
+/* modal css */
+/* Stepper Navigation  */
+
+.stepperNavigation {width: 100%;}
+.stepperNavigation .step-icon {width: 60px;height: 60px;border: 1px solid #e7e7e7;background: #fff;}
+.stepperNavigation .active-step {width: 60px;height: 60px;border: 1px solid #e7e7e7;display: flex;align-items: center;background: #0a6259;}
+.stepperNavigation .active-step img {filter: invert(1);}
+.stepperNavigation .step-icon img {filter: invert(1);}
+
+
+/* Thank you Popup */
+
+.thankYou .card {max-width: 645px;margin: 0 auto;padding: 40px;border: 1px solid #ffffff;box-shadow: 0 0 20px #00000021;display: block;border-radius: 30px;}
+.thankYou h2 {font-size: 36px;font-weight: 700;}
+.thankYou p {font-size: 18px !important;max-width: 80%;margin: 0 auto;}
+.buttonThanks {background: #0a6259;padding: 9px 25px !important;background-repeat: no-repeat;background-position: 20px 13px;color: var(--Is-white);display: inline-flex;width: 100%;text-decoration: none;margin: 20px 0px;align-items: center;max-width: 80%;transition: 0.4s ease-in-out;justify-content: center;font-size: 18px !important;font-weight: 600 !important;border-radius: 10px !important;}
+.thankYou a.buttonThanks:hover {background: #034b44;}
+.thankYou .successBtns a {width: 100%;}
+.topImg {width: 100%;}
+.profilePreview .imgWrapper img {border: 4px solid #0a6259;border-radius: 50%;height: 130px;width: 130px;object-fit: cover;}
+.profileName {margin-left: 16px;}
+.profileName h2 {font-size: 36px;font-weight: bold;margin: 0;}
+.profileName p {font-size: 18px !important;color: #000000;margin: 0;display: flex;justify-content: space-between;}
+.highlightedText {font-weight: 600;border: 1px solid #b4edd6;background: #e0fff3;padding: 3px 20px;border-radius: 50px;font-size: 14px;display: inline-block;}
+.numberVerify {margin: 20px 0;display: inline-block;width: 100%;}
+.numberVerify h5 {font-weight: 700;font-size: 20px !important;}
+.numberVerify .highlightedText {font-size: 16px;font-weight: 700;margin-bottom: 20px;}
+p.description {font-size: 18px !important;color: #000000;}
+.profileAbout {margin: 20px 0 40px;display: inline-block;width: 100%;}
+.profileTitle {font-size: 20px !important;font-weight: 700;margin-bottom: 20px;}
+.profileAbout ul {list-style: none;padding: 0;margin: 0;display: grid;grid-template-columns: repeat(2, 1fr);}
+.profileAbout ul li {display: inline-block;width: 100%;margin-bottom: 8px;}
+.profileAbout ul b {width: 160px;float: left;color: #000;font-weight: 600;}
+.profileAbout ul span {color: #646464;font-weight: 500;width: calc(100% - 160px);float: left;}
+.experiencesList .card {width: 50%;float: left;border: none;box-shadow: none;}
+.profileCard .profileTop {display: flex;margin-bottom: 20px;align-items: center;}
+.profileCard .profileTop .avatar {width: 60px;height: 60px;border-radius: 17px;border: 1px solid #55dba6;display: flex;align-items: center;justify-content: center;margin-right: 15px;}
+.profileCard .profileTop .expMain h4 {font-size: 18px;font-weight: 700;margin: 0;}
+.profileCard .profileTop .expMain .timeSpan {color: #646464 !important;font-weight: 600;margin: 0;}
+.profileCard .profileTop .expMain .role {font-size: 14px;font-weight: 500;}
+.profileCard .profileInner ul {list-style: none;padding: 0;margin: 0;}
+.profileCard .profileInner ul li {display: inline-block;width: 100%;margin-bottom: 8px;}
+.profileCard .profileInner ul li b {width: 210px;float: left;color: #000;font-weight: 600;}
+.profileCard .profileInner ul li span {color: #646464;font-weight: 500;width: calc(100% - 210px);float: left;}
+.profileCard .profileInner .description {font-size: 16px !important;max-width: 90%;}
+.certificates {display: grid;grid-template-columns: repeat(4, 1fr);}
+.certificates li {text-align: center;}
+.certificates li a {border: 1px solid #55dba6;display: inline-block;width: 100%;text-align: center;border-radius: 17px;padding: 10px;text-decoration: none;color: #000;font-weight: 500;font-size: 12px;}
+.certificates li a img {display: inline-block;margin-bottom: 10px;}
+.experiencesList {display: inline-block;width: 100%;margin-bottom: 40px;}
+.skillsetList {display: inline-block;width: 100%;margin-bottom: 40px;}
+.experiencesList {display: inline-block;width: 100%;margin-bottom: 40px;}
+.education {display: inline-block;width: 100%;margin-bottom: 40px;}
+.skillsetList .skillUInner {margin-bottom: 23px;display: inline-block;width: 100%;}
+.skillsetList .skillUInner h4 {font-size: 16px;color: #000000;}
+.skillsetList .skillUInner ul {list-style: none;padding: 0;margin: 0;display: flex;gap: 12px;flex-flow: wrap;}
+.skillsetList .skillUInner ul li {border: 1px solid #c9c9c9;padding: 10px 25px;border-radius: 50px;color: #808285;}
+.documentations ul.certificates {list-style: none;padding: 0;margin: 0;display: grid;grid-template-columns: repeat(6, 1fr);grid-gap: 20px;}
+.documentations ul.certificates a {display: flex;align-items: center;flex-direction: column;}
+.login-process-wrap {max-width: 650px;margin: 0 auto;box-shadow: 0 0 30px 0 rgb(0 0 0 / 8%);border-radius: 40px;padding: 50px 7%;text-align: center;}
+.form-control {padding: 12px 14px 12px 16px;font-weight: 500;margin-bottom: 14px;border-radius: 10px;background-repeat: no-repeat;background-position: 15px center;outline: none !important;box-shadow: none !important;background-size: 20px 20px;font-size: 14px;}
+.form-control.input-icon {padding: 12px 12px 11px 44px;}
+body select.form-control {padding-right: 35px !important;}
+.fieldset {position: relative;}
+span.input-field-icon {position: absolute;top: 13px;left: 14px;}
+span.input-field-icon img {width: 20px;height: 20px;}
+.loaderCustom {height: 15px;width: 105px;display: flex;position: relative;}
+.loaderCustom .circle {width: 15px;height: 15px;border-radius: 50%;background-color: #fff;animation: move 500ms linear 0ms infinite;margin-right: 30px;}
+.loaderCustom .circle:first-child {position: absolute;top: 0;left: 0;animation: grow 500ms linear 0ms infinite;}
+.loaderCustom .circle:last-child {position: absolute;top: 0;right: 0;margin-right: 0;animation: grow 500ms linear 0s infinite reverse;}
+.LoaderMain {position: fixed;left: 50%;top: 50%;width: 100%;height: 100%;transform: translate(-50%, -50%);display: flex;align-items: center;justify-content: center;backdrop-filter: blur(9px);z-index: 9;background: #0000006b;}
+button.attach:hover svg * {fill: #fff;}
+.postJobfirst h5 {font-size: 20px;}
+.passField .MuiInputBase-colorPrimary {border: 1px solid #c9c9c9;font-size: 16px;border-radius: 10px;margin-right: 10px;}
+.DeleteModal .innerModal h3 {font-size: 22px;font-weight: 700;max-width: 400px;margin-bottom: 40px;}
+.DeleteModal .innerModal button.MuiButton-containedError {color: #fff;background: #e23c3c !important;}
+.sidebarItem.active svg *, .sidebar .sidebarItem:hover svg * {fill: #fff;}
+.postJobfirst {width: 100%;min-height: 500px;border: 1px dashed #d9d9d9;border-radius: 20px;}
+.employerUpload .imgWrap {position: relative;margin: 0;}
+.employerUpload .imgWrap .MuiInput-underline {position: absolute;width: 100%;height: 100%;}
+.employerUpload .imgWrap input {background: transparent;border: none;min-height: auto !important;padding: 0;position: absolute;width: 100% !important;height: 100%;opacity: 0;z-index: 1;}
+.employerUpload .imgWrap .MuiInput-underline:after {content: none;}
+.employerUpload .imgWrap .MuiInput-underline:before {display: none;}
+.employerUpload .imgWrap input:after, .employerUpload .imgWrap input:before {content: none;}
+.employerUpload .inputFile {position: absolute;right: 0px;bottom: 0px;height: 40px;width: 40px;border: 1px solid #e7e7e7;background: #fff;border-radius: 50px;display: flex;align-items: center;justify-content: center;}
+.employerUpload .inputFile svg {position: relative;top: auto;left: auto;}
+.profileCardBox label#currency {margin: 0 !important;}
+.react-datepicker-popper {z-index: 99 !important;}
+.menu-title a {display: inline-block;}
+.customTabs .MuiTabs-flexContainer::-webkit-scrollbar {height: 3px;}
+.customTabs .MuiTabs-flexContainer::-webkit-scrollbar-track {background: #fff;border-radius: 4px;}
+.customTabs .MuiTabs-flexContainer::-webkit-scrollbar-thumb {background: #cdcdcd;}
+.completeProfileView {max-width: 1500px;margin: 30px auto;}
+.stepperNavigation .active-step svg * {fill: #fff;}
+.stepperNavigation .step-icon svg * {fill: #646464;}
+.StepFormCol .Mui-active {color: #0a6259;}
+.applicantSidebar .profileUpper.newApplicants {width: 100%;justify-content: space-between;cursor: pointer;}
+.applicantSidebar .profileUpper.newApplicants .applicantTop {display: flex;gap: 10px;}
+.newApplicants .locationDate {flex-direction: column;gap: 6px;}
+.applicantTopFilters {background: transparent;padding: 0;}
+.applicantTopFilters .formDataInfo {justify-content: space-between;}
+.applicantTopFilters .formDataInfo .LocationAutocomplete input {border: none;}
+.applicantTopFilters .formDataInfo .queRow .formInputFiled {border-radius: 50px;}
+.applicantTopFilters .formDataInfo .queRow .formInputFiled.filterApplicantOp {border-radius: 10px;background: #55DBA6;color: #000;}
+.jobHighlight {color: #1BA971;font-size: 13px !important;font-weight: normal !important;padding: 7px 24px;background: #D2FAEA;display: inline-block;border-radius: 40px;}
+.expectedDuties.applicantDuties {margin: 10px 0;}
+.expectedDuties.applicantDuties h5 {font-size: 16px;}
+.expectedDuties.applicantDuties ul {padding: 0;display: flex;width: 100%;flex-wrap: wrap;gap: 10px;}
+.expectedDuties.applicantDuties ul li {display: inline-flex;width: auto;background: transparent;border: 1px solid #c9c9c9;border-radius: 40px;color: #808285;font-size: 14px;line-height: normal;}
+.customapplicants {max-width: 100%;width: 100%;padding: 20px;background: #F5F5F5;border: 1px solid #e7e7e7;}
+.InlineFilters h5 {font-size: 16px;color: #000 !important;opacity: 1;}
+.InlineFilters {border-bottom: 1px solid #e2e2e2;margin-bottom: 20px;padding-bottom: 10px;}
+.InlineFilters:last-child {border-bottom: none;padding-bottom: 0;margin-bottom: 0;}
+.InlineFilters .radioChecks {display: flex;align-items: center;flex-wrap: wrap;}
+.InlineFilters .radioChecks .radioCheckBtn {align-items: center;}
+.InlineFilters .radioChecks .Mui-checked {color: #55dba6;}
+.InlineFilters .rangeSliderC {max-width: 90%;margin: 0 auto 20px;display: block;}
+.InlineFilters .rangeSliderC span.MuiSlider-rail {background: #DBDBDB !important;height: 9px;}
+.InlineFilters .rangeSliderC span.MuiSlider-track {background: #55DBA6 !important;height: 10px;border: none !important;}
+.InlineFilters .rangeSliderC span.MuiSlider-thumb {background: #55dba6;border: 3px solid #fff;width: 26px;height: 26px;}
+.InlineFilters .MuiSelect-select {padding: 10px 14px;width: 100%;background: #fff;}
+.InlineFilters .MuiInputBase-root.MuiOutlinedInput-root {width: 100%;margin-top: 9px;border-radius: 9px;}
+.helpder_details_dmc button {margin-left: 0 !important;width: 100%;}
+.shortDetailModal {background: #fff;}
+.modalHeading {font-size: 20px !important;font-weight: 700 !important;color: #0a6259;margin-bottom: 10px !important;}
+.expectedDuties.modalDiv {padding-bottom: 10px;border-bottom: 1px solid #e7e7e7;}
+.favourite .wishlistIcon img {filter: brightness(0.5);}
+.customModal .innerModal.delModal .imguser {width: 100px;height: 100px;border-radius: 50%;overflow: hidden;border: 1px solid #d1d1d1;}
+.customModal .innerModal.delModal .imguser img {margin: 0 !important;}
+.customModal .innerModal.delModal button {width: 100%;max-width: 100%;margin: 0 !important;}
+.customModal .innerModal.delModal .MuiDialogActions-root {flex-direction: column;width: 100%;gap: 10px;}
+.customModal .innerModal.delModal button:nth-child(2) {border: 1px solid #000;background: transparent !important;}
+.chatBox {height: calc(100vh - 270px);margin: 0;overflow: hidden;border-color: #C9C9C9 !important;border-radius: 30px !important;}
+.chatBox .MessageChat {height: calc(100vh - 480px);overflow: auto;padding: 0 10px;}
+.bottomDetails button.green-btn {min-width: auto !important;}
+.bottomDetails button.green-btn.favourite svg * {fill: #000;}
+.bottomDetails button.green-btn svg {margin-right: 5px;}
+.applicantTopFilters .formDataInfo .formInputFiled.filterSort {border: none;display: flex;align-items: flex-end;}
+.applicantTopFilters .formDataInfo .filterSort .formInputFiled {background: #55dba6;border: none !important;outline: none !important;margin: 0;width: 100%;}
+.applicantTopFilters .formDataInfo .filterSort label {background: transparent;color: #000;font-weight: 700;}
+.closeModal {position: absolute;right: 10px;top: 10px;}
+.customModal .innerModal .closeModal button {width: auto !important;max-width: none !important;min-width: auto !important;padding: 6px !important;border-radius: 60px !important;}
+.paymentCardDetail {width: 100%;padding: 20px;}
+.paymentCardDetail img {max-width: 60px;}
+.subcloseButton button {width: auto !important;}
+.bottomDetails button.green-btn {display: flex!important;}
+.subcloseButton button {width: auto !important;}
+.favProfileListing {gap: 20px;margin-bottom: 30px;}
+.expectedDuties .dutiesList {display: flex;align-items: center;justify-content: flex-start;gap: 10px;margin-bottom: 20px;}
+.expectedDuties .dutiesList.profileDuties {flex-direction: column;align-items: flex-start;margin-bottom: 10px;gap: 6px;}
+.expectedDuties .dutiesList li {width: auto;border: 1px solid #c1c1c1;border-radius: 40px;color: #c1c1c1;line-height: 20px;}
+nav.MuiPagination-root .Mui-selected {background: #55DBA6;color: #fff;border-color: transparent;font-weight: bold;}
+.customGridW.MuiGrid-root.MuiGrid-container {width: 100%;margin: 0;}
+.requiredPostJob {max-width: 700px;width: 100% !important;margin-left: 0 !important;gap: 12px !important;flex-wrap: nowrap !important;}
+.requiredPostJob .MuiGrid-item {padding-left: 0 !important;}
+.InlineFilters .rangeSliderC .MuiSlider-mark {width: 0 !important;}
+.work_Profile p {display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;}
+.paymentSuccess .dashboardContentArea {width: 100%;}
+.fullFooter .dashboardContentArea.footerDash.employerFooter {width: 100%;}
+.successbuttons button {margin-top: 0;}
+.successbuttons {display:flex;align-items:center;justify-content:center;gap:10px;}
+.disclaimer * {fill: #646464;}
+.disclaimer svg {height: 120px;width: 120px;margin-bottom: 30px;}
+input.formInputFiled.full-width-datepicker {padding: 13px 15px !important;border: 1px solid rgba(0, 0, 0, 0.23);border-radius: 9px;}
+.mainSorting .MuiGrid-root.MuiGrid-item {width: 100%;flex-basis: 100%;max-width: 100%;padding: 0;}
+.mainSorting .formDataInfo {width: 100%;margin: 0;}
+.publicApplicant .dashcolProfile {justify-content: center !important;margin-bottom: 50px;text-align: center;}
+.subText {font-size: 18px;color: #646464;}
+.greenCard {background: #0A6259;border-radius: 30px;overflow: hidden;}
+.greenCard .uppertouch h3 {font-size: 28px;font-weight: 800;color: #fff;}
+.greenCard .uppertouch p {font-size: 16px !important;color: #fff;}
+.greenCard ul {list-style: none;padding: 0;margin: 0;gap: 30px;}
+.greenCard .uppertouch ul a {display: inline-block;color: #fff;text-decoration: none;font-weight: 600;position: relative;transition: 0.4s ease-in-out;cursor: pointer;}
+.greenCard .uppertouch ul a:hover {color: #55dba6;}
+.lowerTouch a {color: #fff;font-size: 25px;transition: 0.4s ease-in-out;cursor: pointer;}
+.lowerTouch a:hover {color: #55dba6;}
+.imgCon {padding: 0px;background: #fff;height: 50px;width: 50px;border-radius: 4px;display: flex; align-items: center;justify-content: center;}
+.imgCon img {width: 40px;height: 40px;}
+.greenCard:after {content: '';position: absolute;height: 240px;width: 240px;background: #55dba6;border-radius: 50%;right: -150px;bottom: -60px;}
+.faqListing {width: 100%;}
+.nodata img {max-width: 400px;margin: 0 auto;}
+.faqAccord {width: 100%;margin-top: 20px;}
+.faqAccord .accordHead {min-height: auto !important;padding: 0;}
+.faqAccord .accordionlist {border: 1px solid #C9C9C9;box-shadow: none;border-radius: 12px !important;padding: 10px;}
+.faqAccord .accordionlist .accordAns {border-top: 1px solid #E0E0E0;padding: 12px 10px;font-size: 16px;font-weight: 600;}
+.faqAccord .accordHead .MuiAccordionSummary-content {margin: 0 !important;padding: 12px 10px;font-weight: 800;font-size: 18px;}
+.paymentSuccess .dashboardContentArea.faqCon {align-items: flex-start !important;}
+.faqAccord .accordHead svg {background: #0A6259;border-radius: 40px;transition: 0.4s ease-in-out;}
+.faqAccord .accordHead svg * {fill: #fff;}
+.faqAccord .MuiAccordionSummary-expandIconWrapper {transition: 0.4s ease-in-out;}
+
+
+.adminTopFilters .formDataInfo .filterSort .formInputFiled {
+  background: #E6E6E6;border: none !important;outline: none !important;margin: 0;width: 100%;
+}
+.adminFooter {
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  background-color: #E2E2E2!important;
+  min-height: auto;
+  padding: 10px;
+}
+/* global table css */
+.global-table {
+  border: 1px solid #e0e0e0 !important;
+  padding: 15px !important;
+  border-radius: 15px !important;
+  width: 100% !important;
+}
+.global-table table {
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin-bottom: 0;
+}
+
+.global-table thead tr:first-child {
+  box-shadow: none;
+}
+.global-table tr {
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 12%);
+  border-radius: 15px;
+}
+.global-table tr td {
+  border: none;
+  padding: 10px 15px;
+  background: none;
+}
+td.skill-label span {
+  background: #fff2e6;
+  padding: 5px 17px;
+  border: 1px solid #ffca9a;
+  border-radius: 50px;
+  min-width: 110px;
+  display: inline-block;
+  text-align: center;
+}
+.global-table td button {
+  border: none;
+  background: transparent;
+}
+.global-table button img {
+  width: 22px;
+}
+td.strong {
+  font-weight: 600;
+}
+.global-table tr td p {
+  margin: 0;
+}
+.global-table th {
+  background: #f3f6f9 !important;
+  border: none !important;  
+  padding: 15px !important;
+  white-space: nowrap !important;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.status {
+  margin: 0;
+    background: #32bfa3;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    line-height: normal;
+    font-size: 12px !important;
+    font-weight: 700;
+    border-radius: 3px;
+}
+/* ******************* Media Query ******************* */
+
+@media screen and (max-width: 1400px) {
+
+    .locationDate {flex-direction: column;gap: 6px;}
+    .helperContent h5 {font-size: 18px;}
+    .applicantSidebar {padding: 10px;}
+    .planName h3 {font-size: 18px;}
+    .profileCardBox {padding: 40px !important;}
+    .employerapplicant .buttonFlex button {width: 100%;padding: 10px !important;font-size: 14px !important;min-width: auto !important;}
+    .buttonFlex {gap: 2px;}
+    .helpersCol.employerapplicant .profileUpper {align-items: flex-start;}
+    .location {background-position: left top;}
+
+}
+@media screen and (max-width: 1199px) {
+
+    body, p {font-size: 15px !important;}
+    section {padding: 55px 0;}
+    h2.title {font-size: 34px;}
+    .FileUploadtion {flex-direction: column;}
+    .FileUploadtion label {margin-bottom: 0;}
+    .workCounter .MuiGrid-item:nth-child(3n) .work-col:before {display: none;}
+    .work-col:before {left: 70%;}
+    .homeBannerSection h2 {font-size: 36px;}
+    .homeBannerSection p {font-size: 19px !important;}
+    .recrutersThumbs img {max-width: 120px;max-height: 30px;}
+    .work-col h5, .helperContent h5 {font-size: 20px;}
+    .whoWeContent h6 {font-size: 16px;}
+    .pricingPrice {font-size: 46px;padding: 30px 0 20px;margin-top: 25px;}
+    .menubarLink a {margin-right: 15px;font-size: 15px;}
+    .recrutersThumbsCol {justify-content: center;}
+    .recruitersContainer h6 {font-size: 18px;line-height: 1.4;}
+    .InlineFilters span.MuiButtonBase-root.MuiCheckbox-root {padding: 0;}
+    .InlineFilters label.MuiFormControlLabel-root {margin-bottom: 10px;margin-left: 0;}
+
+}
+@media screen and (max-width: 1050px) {
+
+    .applicantDetails {margin-left: 10px;margin-top: 0px;}
+    .applicantSidebar {width: 100%;}
+
+}
+@media screen and (max-width: 960px) {
+
+    h2.title {font-size: 26px;}
+    section {padding: 45px 0;}
+    img.logo {max-width: 160px;}
+    .homeBannerSection h2 {font-size: 24px;line-height: 1.2;}
+    .homeBannerSection {padding-top: 20px;}
+    .homeBannerSection p {font-size: 16px !important;}
+    .headerInnerBar {padding: 7px 0 !important;}
+    .workCounter .MuiGrid-item:nth-child(2n) .work-col:before {display: none;}
+    .workCounter .MuiGrid-item:nth-child(3) .work-col:before {display: block;}
+    .whoWeImg img {width: 100%;}
+    .whoWeImg {padding-right: 15px;max-width: 100%;padding-bottom: 15px;}
+    .pageContainer > .MuiGrid-root {margin-left: -15px;}
+    .recruitersSection .pageContainer > .MuiGrid-root {margin-left: 0;}
+    .whoWeContent {padding-left: 0;}
+    .footerCopyright, .footerTop {padding: 15px 0;text-align: center;}
+    .footerLinks {gap: 10px;justify-content: center;}
+    .footerTop img {margin: auto;}
+    .social-icons {justify-content: center;}
+    .social-icons svg {width: 31px !important;height: 31px;min-width: 31px;padding: 7px;margin-left: 8px;}
+    .searchByLocation {padding: 8px 12px 8px 16px;margin: 20px 0 0 !important;}
+    .searchByLocation .MuiGrid-root label {padding: 5px 5px;font-size: 14px;}
+    .searchButton button {font-size: 14px;}
+    .searchButton {width: 90px;}
+    .searchInput {width: calc(100% - 90px);}
+    .pageMenuIcon {display: flex;align-items: center;gap: 10px;}
+    .menubarLink {align-items: flex-start;}
+    .menubarLink a {font-size: 16px;margin: 6px 15px 6px 0px !important;}
+    .MuiDrawer-paperAnchorRight .menubarLink {flex-direction: column;}
+
+}
+@media screen and (max-width: 900px) {
+    
+    .chatBox {margin-top: 20px;}
+    ul.sidebar {align-items: center;justify-content: center;}
+    .customTabs .MuiTabs-flexContainer {overflow: auto;width: 100%;}
+    .applicantDetails {margin-left: 10px;margin-top: 0px;}
+    .chatMemberList {flex-direction: column !important;align-items: self-start;justify-content: flex-start;position: relative;}
+    .chatMemberList p.timings {position: absolute;right: 10px;bottom: 10px;}
+    .chatMemberList .applicationDot {display: none;}
+    .chatMemberList .senderInfo {margin-bottom: 10px;} 
+    .footerDash.dashboardContentArea.employerFooter {flex-direction: column;}
+    .dashboardContentArea {min-height: calc(100vh - 147px);width: calc(100% - 70px);}
+    .dashboardSidebar a.sidebarItem {width: auto;display: inline-flex;padding: 12px;justify-content: center;height: 40px;width: 40px;position: relative;}
+    .dashboardSidebar a.sidebarItem .MuiListItemText-root {display: none;}
+    .dashboardSidebar {max-width: 70px !important;z-index: 1;padding: 90px 10px 0px;}
+    .dashboardSidebar a.sidebarItem svg {width: 20px;height: 20px;margin: 0;}
+    .dashboardSidebar button.logout {padding: 12px;margin-bottom: 0;justify-content: center;}
+    .dashboardSidebar button.logout svg.logout.customSvG {margin: 0;}
+    .dashboardSidebar button.logout .MuiListItemText-root {display: none;}
+    .dashboardSidebar a.sidebarItem .MuiListItemText-root {display: block;position: absolute;left: 115%;background: white;color: #000;opacity: 0;border: 1px solid #ddd;padding: 5px 8px;border-radius: 4px;visibility: hidden;}
+    .dashboardSidebar a.sidebarItem .MuiListItemText-root span {text-wrap: nowrap;}
+    .dashboardSidebar a.sidebarItem:hover .MuiListItemText-root {opacity: 1;visibility: visible;}
+    .buttonFlex {flex-direction: column;}
+    .buttonFlex button {margin-left: 0 !important;}
+    .helperSignUpForm .formLoginSignup {box-sizing: border-box;}
+    .helperRegister {margin: 0 !important;width: 100% !important;}
+    .helperRegister .imgWrap {padding: 20px !important;}
+    .helperRegister .imgWrap img {border-radius: 20px;max-height: 300px;width: 100%;object-fit: cover;}
+    .helperSignUpForm .formLoginSignup {padding: 20px !important;width: 100%;}
+    .helperSignUpForm .formLoginSignup .socialLogin {flex-direction: column;}
+    .helperSignUpForm .formLoginSignup .socialLogin button {margin: 0 !important;justify-content: center;}
+    .stepsRow .MuiStep-alternativeLabel h4 {font-size: 14px;line-height: normal;margin-top: 0;min-width: 100px;}
+    .stepsRow .MuiStep-alternativeLabel span {font-size: 12px;}
+    .stepsFormRow {width: 100% !important;margin-left: 0 !important;}
+    .stepsRow {width: 100% !important;margin-left: 0 !important;}
+    .applicantDetails {margin-left: 0;margin-top: 10px;}
+    .ChatSidebar {min-height: auto;}
+    .ChatSidebar .bottomDetails button.green-btn {width: auto;display: inline-flex !important;margin: 0 5px 5px !important;}
+    .helpersCol {margin-bottom: 10px;}
+    .dashboardContentArea .MuiGrid-root.MuiGrid-container {width: 100%;}
+    
+}
+@media screen and (max-width: 767px) {
+
+    .footerDash.dashboardContentArea.employerFooter {flex-direction:column;padding:10px;width:100%;}
+    .MuiDrawer-paperAnchorRight {width:220px;padding:20px;}
+    .MuiDrawer-paperAnchorRight .menubarLink a {padding:7px 0px!important;margin:6px 0!important;}
+    .MuiDrawer-paperAnchorRight .menubarLink a.loginButton {padding:9px 25px 9px 43px!important;}
+    .MuiDrawer-paperAnchorRight .menubarLink a.signUpButton {padding:9px 25px 9px 43px!important;}
+    .profileCardBox {padding:20px!important;}
+    .dashboardContentArea {padding:10px;min-height:calc(100vh - 139px);}
+    .pageMenuIcon {gap:20px;}
+    .profileCardBox .formDataInfo .MuiFormControl-root.queRow {margin:0!important;}
+    .StepFormCol {padding:20px!important;}
+    .stepperEmployer {padding-left:32px!important;}
+    .StepFormCol .step-wrapper span {font-size:16px!important;text-align:left;}
+    .stepperEmployer .MuiSlider-markLabel {font-size:10px!important;top:-4px!important;}
+    .stepperEmployer label {font-size:12px!important;}
+    .profileCardBox .formDataInfo .MuiFormControl-root.queRow {margin-bottom:10px!important;}
+    .customTabs button {font-size:18px;padding:4px 5px;line-height:normal;min-height:auto;}
+    .passwordinput {max-width:100%;flex-direction:column;gap:10px;}
+    .mainRegister {flex-direction:column!important;}
+    .roleCheckboxGroup {flex-direction:column!important;}
+    .stepperNavigation .MuiStepper-horizontal {overflow:auto;}
+    .StepFormCol .uploadPhoto {flex-direction:column;gap:10px;align-items:flex-start;}
+    .stepsRow .MuiStepConnector-alternativeLabel span.MuiStepConnector-line {border-top:1px solid #ddd!important;}
+    .highlightsApplicant {margin:0;}
+    .applicantDetails {padding:15px;}
+    .locationDate {align-items:flex-start!important;}
+
+}
+@media (max-width: 599px) {
+
+    h2.title {font-size:24px;}
+    section {padding:30px 0;}
+    section.recruitersSection .MuiGrid-root {margin:0;}
+    .homeBannerSection h2 {font-size:26px;text-align:center;}
+    .homeBannerSection p {font-size:16px!important;text-align:center;}
+    .banner-img {padding-left:2%;}
+    .recrutersThumbs img {max-width: 100px;max-height: 27px;}
+    .workTabsCol button.tabs {padding: 0 25px;min-width: 110px;font-size: 14px;}
+    .work-count {font-size: 21px;}
+    .work-col:before {left: 82%;}
+    .locationDate {gap: 10px;font-size: 14px;flex-direction: column;}
+    .publicApplicant .locationDate {align-items: flex-start !important;}
+    .helpersCol {padding: 15px;}
+    .work-col h5,.helperContent h5 {font-size: 18px;}
+    .availabilityTag {margin-top: 10px;}
+    .workTabsCol .MuiTabs-flexContainer, .workTabsCol .MuiTabs-scroller {overflow: auto !important;}
+    .pricingPrice {font-size: 40px;padding: 20px 0 10px;margin-top: 15px;}
+    .workingExperienceTab {padding: 10px !important;}
+    .footerLinks a {font-size: 14px;}
+    .applicantRespond {flex-direction: column;gap: 10px;}
+    .applicantRespond button {margin: 0 !important;}
+    .dashboardContentArea .MuiGrid-root.MuiGrid-grid-md-8.MuiGrid-grid-lg-9 {width: 100%;}
+
+}
+@media screen and (max-width: 567px) {
+
+    body .stepperEmployer {border: none !important;margin: 0;padding: 0 !important;margin-top: 30px;}
+    h2.commonTitle {font-size: 32px;}
+    body.toggled .dashboardSidebar {left: 0;opacity: 1;visibility: visible;}
+    body.toggled .dashboardContentArea, body.toggled .footerDash.dashboardContentArea.employerFooter {width:calc(100% - 70px);}
+    .JobInfoBox {max-width: 100%;border: none;background: transparent;position: relative;padding-bottom: 0;}
+    .JobBox {flex-direction: column;position: relative;width: 100%;}
+    .JobInfoRight h6 {display: none;}
+    .JobInfoBox .JobdetailBottom .postedTime {display: none;}
+    .JobInfoBox .JobdetailBottom li strong {width: 140px;}
+    .JobInfoRight {position: initial;padding: 20px;padding-top: 0;}
+    .JobInfoRight  .buttonFlex {justify-content: center;}
+    .MuiStepConnector-line {border: none !important;}
+    .dashcolProfile {flex-direction: column;}
+    .dashcolProfile .complete-profile-right {min-width: auto;width: 100%;margin-bottom: 20px;}
+    .dashcolProfile .complete-profile-right p {font-size: 16px !important;}
+    .profileTop {flex-direction: column;align-items: flex-start !important;gap: 20px;}
+    .profile-section {flex-direction: column;gap: 10px;}
+    .profileAbout ul {grid-template-columns: repeat(1, 1fr);}
+    .experiencesList .card {width: 100%;margin-bottom: 20px;}
+    .experiencesList .card .profileTop {align-items: flex-start;}
+    .LanguageKnown.experiencesList .card {width: 50%;}
+    .LanguageKnown.experiencesList .card .profileTop {flex-direction: row;align-items: center;gap: 0;}
+    .registrationPageContainer {padding: 30px 10px  !important;}
+    .dashboardContentArea {width: 100%;transition: 0.4s ease-in-out;}
+    .dashboardSidebar {left: -70px;transition: 0.4s ease-in-out;opacity: 0;visibility: hidden;}
+    .formLoginSignup {padding: 20px !important;}
+    .formLoginSignup .socialLogin button {margin: 0 !important;justify-content: center;}
+    .formLoginSignup .socialLogin {flex-direction: column;}
+    .forgotPassword {text-align: left;padding-top: 0px !important;}
+    .forgotPassword a {padding: 0;}
+    .forgotPassword {text-align: left;padding-top: 0px !important;}
+    .forgotPassword a {padding: 0;}
+    .primaryLogin {order: 2;padding-top: 0 !important;}
+    .secondaryLogin .loginWrap {padding: 20px;}
+    .secondaryLogin .loginWrap img {height: 250px;width: 100%;object-fit: cover;border-radius: 20px;}
+    .employerapplicant .buttonFlex button {width: 100%;}
+    .dashboardSidebar a.sidebarItem img {margin: 0;}
+    .pushsetting .gridsetting .primary {max-width: 100%;margin: 0;}
+    .pushsetting .gridsetting {flex-direction: column;}
+    .pushsetting .gridsetting .secondary {justify-content: flex-start;align-items: flex-start;margin-top: 10px;}
+    .highlightsApplicant ul li {flex-direction: column;margin-bottom: 10px;justify-content: flex-start;align-items: flex-start;gap: 0px !important;}
+    .employerHeader {flex-direction: column;}
+
+}

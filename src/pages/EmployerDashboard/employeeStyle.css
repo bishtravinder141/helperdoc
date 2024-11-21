@@ -1,0 +1,9 @@
+.MuiSlider-mark {
+    background: red !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 8px !important;
+}
+/* .MuiSlider-thumb {
+    left: 0% !important;
+} */

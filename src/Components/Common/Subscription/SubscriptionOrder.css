@@ -1,0 +1,133 @@
+.added-payment-card .types-col {
+  width: 100%;
+  max-width: 100%;
+  margin: 5px 0 14px;
+  display: inline-block;
+  padding: 20px;
+}
+.added-payment-card .payement-card-img img,
+button.remove-card img {
+  margin: 0;
+  max-width: 75px;
+}
+.added-payment-card .border-popup-btn img {
+  width: 26px;
+  margin-bottom: 7px;
+}
+.added-payment-card .select-types {
+  width: 100%;
+}
+.added-payment-card > .col-12 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.added-payment-card .types-col {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px 0 14px;
+    display: inline-block;
+    padding: 20px;
+  }
+
+
+
+
+  .inputype-col img {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    margin: 0;
+    opacity: 0;
+    width: 38px;
+  }
+  .inputype-col span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--Is-light-gray);
+    border-radius: 15px;
+  }
+
+  .back-arrow-heading h3 span {
+    color: #646464;
+    font-size: 16px;
+    display: block;
+}
+
+.payement-card {
+  border: 1px solid #C9C9C9;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.paymentCardDetail {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.paymentCardDetail img {
+  max-width: 70px;
+}
+
+.orderSummary {
+  width: 100%;
+  padding: 30px;
+  background: #FAFAFA;
+  border-radius: 16px;
+}
+
+.orderSummary h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.orderSummary ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orderSummary ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.orderSummary ul {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.orderSummary ul.subtotal li {
+  font-weight: 800;
+}
+
+.orderSummary ul.subtotal {
+  border: none;
+}
+
+.paymentTitle {
+  font-size: 18px !important;
+}
+
+.subscription-plans {
+  padding: 20px 0;
+}
+
+a.subscription {
+  color: #000;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .orderSummary {margin-top: 30px;}
+
+}

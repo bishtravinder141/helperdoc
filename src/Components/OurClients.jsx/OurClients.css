@@ -1,0 +1,48 @@
+.recruitersSection {
+  color: #90b4b0;
+  background-color: var(--Is-darkgreen);
+  padding: 25px 0;
+}
+.recruitersContainer h6 {
+  margin: 0 0 20px;
+}
+.recrutersThumbsCol {
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.recrutersThumbs img {
+  max-width: 140px;
+  max-height: 35px;
+}
+
+/********************************************************Media Query************************************************************/
+
+@media (max-width: 1199px) {
+  .recrutersThumbs img {
+    max-width: 120px;
+    max-height: 30px;
+  }
+  .recrutersThumbsCol {
+    justify-content: center;
+  }
+  .recruitersContainer h6 {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 960px) {
+  .recruitersSection .pageContainer > .MuiGrid-root {
+    margin-left: 0;
+  }
+}
+@media (max-width: 599px) {
+  .recrutersThumbs img {
+    max-width: 100px;
+    max-height: 27px;
+  }
+  section.recruitersSection .MuiGrid-root {
+    margin: 0;
+  }
+}

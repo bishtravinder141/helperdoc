@@ -1,0 +1,22 @@
+.simple-btn {
+  background: var(--Is-green) !important;
+  color: var(--Is-black) !important;
+  text-decoration: none !important;
+  padding: 9px 55px 9px 25px;
+  display: inline-block !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  min-width: 200px !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+}
+.simple-btn:hover {
+  background: #65e5b2 !important;
+  color: var(--Is-black) !important;
+}
+
+.transparent-btn {
+  text-decoration: none !important;
+  text-transform: none !important;
+}

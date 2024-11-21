@@ -1,0 +1,1 @@
+export const TABS = ["subscription_plan", "processing_service_plan"]
