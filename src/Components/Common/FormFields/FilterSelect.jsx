@@ -19,10 +19,7 @@ const FilterSelect = ({
   field,
 }) => {
   return (
-    <FormControl
-      fullWidth
-      className="formInputFiled filterSort"
-    >
+    <FormControl fullWidth className="formInputFiled filterSort">
       {placeholder && <InputLabel>{placeholder}</InputLabel>}
       <Select
         className="formInputFiled filterSelect filterApplicantOp"
@@ -50,11 +47,12 @@ const FilterSelect = ({
           )
         }
       >
-        {MenuData.map((job, index) => (
-          <MenuItem key={index} value={job.name}>
-            {job.name}
-          </MenuItem>
-        ))}
+        {MenuData &&
+          MenuData?.map((job, index) => (
+            <MenuItem key={index} value={job.name}>
+              {job.name}
+            </MenuItem>
+          ))}
       </Select>
     </FormControl>
   );

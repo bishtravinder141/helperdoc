@@ -65,7 +65,7 @@ export function getAllSeadersData() {
         dispatch(setMasterData(res.data));
       }
     } catch (err) {
-      if (err.response.data?.message) {
+      if (err?.response?.data?.message) {
         toastMessage(err.response.data?.message);
       } else {
         toastMessage(t("failure_message"));

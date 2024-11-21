@@ -48,7 +48,7 @@ export default function CheckBoxFieldWithController({
                         checked={field.value.includes(opt.value)}
                         onChange={(e) => {
                           const isChecked = e.target.checked;
-                          onChange(
+                          onchange(
                             isChecked
                               ? [...field.value, opt.value]
                               : field.value.filter(
