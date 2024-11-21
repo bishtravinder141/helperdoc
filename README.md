@@ -36,7 +36,7 @@ Helper Doc is a modern job portal designed to connect employers, employees (hous
 ## Installation  
 1. Clone the repo:  
    ```bash  
-   git clone https://github.com/yourusername/talent-co.git
+   git clone https://github.com/bishtravinder141/talent-co.git
 
 2. Install the dependency:
    ```bash
